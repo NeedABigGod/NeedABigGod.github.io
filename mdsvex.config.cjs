@@ -1,19 +1,22 @@
 module.exports = {
-	extensions: [".svelte.md", ".md", ".svx"],
+	extensions: ['.svelte.md', '.md', '.svx'],
 	smartypants: {
-		dashes: "oldschool",
+		dashes: 'oldschool'
 	},
 	remarkPlugins: [
-		[require("remark-github"), {
-			// Use your own repository
-			repository: "https://github.com/svelte-add/mdsvex.git",
-		}],
-		require("remark-abbr"),
+		[
+			require('remark-github'),
+			{
+				// Use your own repository
+				repository: 'https://github.com/NeedABigGod/NeedABigGod.github.io.git'
+			}
+		],
+		require('remark-abbr')
 	],
 	rehypePlugins: [
-		require("rehype-slug"),
-		[require("rehype-autolink-headings"), {
-			behavior: "wrap",
-		}],
-	],
+		require('rehype-slug')
+		// [require("rehype-autolink-headings"), {
+		// 	behavior: "wrap",
+		// }],
+	]
 };
