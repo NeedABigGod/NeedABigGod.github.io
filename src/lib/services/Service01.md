@@ -1,3 +1,3 @@
-# Service 01
+Individual Education Consultation
 
-Some summary
+Better than homeschool, individual education approaches the specific needs of each student.

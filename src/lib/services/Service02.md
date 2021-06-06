@@ -1,3 +1,3 @@
-# Service 02
+Project Management
 
-Some summary
+Even small projects can benefit from a project management approach.

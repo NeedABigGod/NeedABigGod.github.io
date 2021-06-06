@@ -1,3 +1,3 @@
-# Project 02
+Ground Support Equipment Training
 
-Some summary
+All facility ground support equipment required initial and recurrent training.  This project created a training plan, documentation, and schedule.
