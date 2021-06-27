@@ -3,5 +3,6 @@ layout: section
 ---
 
 # Project 01
+Carriage House
 
-Some summary
+A little accessory dwelling unit that needed a near-complete update to be liveable.
