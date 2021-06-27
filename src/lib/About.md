@@ -6,11 +6,6 @@ four children of her own. Being grandma now is more meaningful to me than I ever
 could have imagined.
 
 I grew up, hanging out with my dad at the airport, and continued working in
-aviation most of my career life. I have a degree in aviation business
-administration and ran my own aircraft cleaning business. I worked in corporate
-aviation in a range of capacities for many years. Now I am using my business and
-life experiences to provide solutions in other businesses. I offer content
-writing, business consulting and administration, homeschool consulting, team leadership, and other services to make you more successful in your work.
+aviation most of my career life. 
 
-Whatever your hand finds to do, do it with your might; for there is no work or device or knowledge or wisdom in the grave where you are going.  Ecclesiastes 9:10
-
+![Beth](img/2021_0418_15351400 (2).jpg)
