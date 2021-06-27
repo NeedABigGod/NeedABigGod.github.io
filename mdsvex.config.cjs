@@ -1,5 +1,8 @@
 module.exports = {
 	extensions: ['.svelte.md', '.md', '.svx'],
+	layout: {
+		section: './src/lib/layouts/section-layout.svelte',
+	},
 	smartypants: {
 		dashes: 'oldschool'
 	},
@@ -19,4 +22,4 @@ module.exports = {
 		// 	behavior: "wrap",
 		// }],
 	]
-};
+}

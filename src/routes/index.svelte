@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { tick } from 'svelte'
 	import About from '$lib/About.md'
 	import Contact from '$lib/Contact.md'
 	import Service01 from '$lib/services/Service01.md'
@@ -8,11 +9,34 @@
 	import Project02 from '$lib/projects/Project02.md'
 	import Project03 from '$lib/projects/Project03.md'
 	import Icon from 'svelte-awesome'
-	import { home } from 'svelte-awesome/icons'
+	import { home, angleDoubleRight, angleDoubleLeft } from 'svelte-awesome/icons'
 	import '../normalize.css'
 	import '@fontsource/niramit/index.css'
 	import '@fontsource/bellota/index.css'
 
+	let services = [Service01, Service02, Service03]
+	let activeService = 0
+	let serviceFlowDirection = 1
+
+	async function scrollServices(step: number) {
+		serviceFlowDirection = step >= 0 ? 1 : -1
+		const target = activeService + step
+		const length = services.length
+		await tick()
+		activeService = ((target % length) + length) % length
+	}
+
+	let projects = [Project01, Project02, Project03]
+	let activeProject = 0
+	let projectFlowDirection = 1
+
+	async function scrollProjects(step: number) {
+		projectFlowDirection = step >= 0 ? 1 : -1
+		const target = activeProject + step
+		const length = projects.length
+		await tick()
+		activeProject = ((target % length) + length) % length
+	}
 </script>
 
 <nav>
@@ -28,23 +52,41 @@
 <div id="landing" class="section sec-about">
 	<div class="section-card">
 		<About />
-		<a href="/about" class="link-continue action-item">Full Bio ➧</a>
+		<a href="/about" class="link-continue bttn-link">Full Bio ➧</a>
 	</div>
 </div>
 
 <div class="section sec-services">
 	<div class="section-card">
-		<div class="sec-service"><Service01 /></div>
-		<div class="sec-service"><Service02 /></div>
-		<div class="sec-service"><Service03 /></div>
+		<div class="sec-service">
+			<svelte:component
+				this={services[activeService]}
+				transitionScale={serviceFlowDirection}
+			/>
+			<button class="sec-nav back" on:click={() => scrollServices(-1)}>
+				<Icon data={angleDoubleLeft} scale="2" />
+			</button>
+			<button class="sec-nav frwd" on:click={() => scrollServices(1)}>
+				<Icon data={angleDoubleRight} scale="2" />
+			</button>
+		</div>
 	</div>
 </div>
 
 <div class="section sec-projects">
 	<div class="section-card">
-		<div class="sec-project"><Project01 /></div>
-		<div class="sec-project"><Project02 /></div>
-		<div class="sec-project"><Project03 /></div>
+		<div class="sec-project">
+			<svelte:component
+				this={projects[activeProject]}
+				transitionScale={projectFlowDirection}
+			/>
+			<button class="sec-nav back" on:click={() => scrollProjects(-1)}>
+				<Icon data={angleDoubleLeft} scale="2" />
+			</button>
+			<button class="sec-nav frwd" on:click={() => scrollProjects(1)}>
+				<Icon data={angleDoubleRight} scale="2" />
+			</button>
+		</div>
 	</div>
 </div>
 
@@ -65,19 +107,23 @@
       font-family: 'Bellota', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     a
       text-decoration: none
-    .action-item
+    .bttn-link
+      transition: background-color 0.2s
       padding: 0.8ex 0.8ch
-      color: $action-text
-      background-color: $action-bg
-      border-radius: $action-radius
+      color: $bttn-link-text
+      background-color: $bttn-link-bg
+      border-radius: $bttn-link-radius
+      &:hover, &:focus
+        background-color: $bttn-link-bg-hover
     .link-continue
-      position: fixed
+      position: absolute
       right: 10px
       bottom: 10px
     #svelte
       display: flex
       flex-direction: column
       align-items: center
+      padding-bottom: 40vh
   
   /* */
 
@@ -145,6 +191,7 @@
     padding-bottom: 50px
     width: 100vw
   .section-card
+    position: relative
     display: flex
     flex: 0 1 auto
     flex-direction: column
@@ -160,6 +207,28 @@
         padding: 0 10px
     @media (min-width: $tablet-width)
       max-width: 1000px
+  .sec-service, .sec-project
+    position: relative
+    height: min(calc(100vh - 180px), 600px)
+  .sec-nav
+    transition: background-color 0.2s
+    position: absolute
+    bottom: 0
+    width: 60px
+    color: $action-text
+    background-color: $action-bg
+    border: $action-border-width solid $action-border-color
+    border-bottom: none
+    &:hover, &:focus
+      background-color: $action-bg-hover
+  .sec-nav.back
+    left: 0
+    border-top-right-radius: $action-border-radius
+    border-left: none
+  .sec-nav.frwd
+    right: 0
+    border-top-left-radius: $action-border-radius
+    border-right: none
   #landing
     padding-top: 20px
     height: calc(100vh - 230px)
