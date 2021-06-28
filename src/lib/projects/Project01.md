@@ -2,7 +2,9 @@
 layout: section
 ---
 
-# Project 01
 Carriage House
+This project entailed updating this accessory dwelling unit, making it a safe and comfortable home for grandparents.
 
-A little accessory dwelling unit that needed a near-complete update to be liveable.
+The timeline was about four months, with some tasks being expendable if the time was cut short.  Some risks included limited resources and unknown construction situations.
+
+![Carriage House Project](img\ProjectCarriageHouse.jpg)

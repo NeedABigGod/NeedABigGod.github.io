@@ -2,7 +2,8 @@
 layout: section
 ---
 
-# Project 03
-Master Bath Update
+Master Bath Update Project
 
-This project is for taking this mid-century modern master bath into the present times.
+The master bath in this mid-century modern home was anything but modern.  This project included updating ceiling electrical work, plumbing, and restructuring the room floor plan.  The time line was three months.  The risks included weather delays as the contractor hired to remove ceiling insulation was scheduled in January.  Costs were the biggest risk in this project.  There were many unknown construction issues so adjustments to supply purchases had to be made.  Additionally, the flooring was and the shower door had delays in completion.
+
+![Master Bath Update Project](img\ProjectMasterBath.jpg)
