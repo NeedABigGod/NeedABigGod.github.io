@@ -8,4 +8,4 @@ could have imagined.
 I grew up, hanging out with my dad at the airport, and continued working in
 aviation most of my career life. 
 
-![Beth](img/2021_0418_15351400 (2).jpg)
+![Beth](img/2021_0418_15351400.jpg)
