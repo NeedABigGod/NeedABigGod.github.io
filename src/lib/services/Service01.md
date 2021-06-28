@@ -9,4 +9,4 @@ Better than homeschool, individual education approaches the specific needs of ea
 
 Additionally, I work with teaching professionals to reimagine their teaching opportunities.  Education institutions, such as government and private schools, are not the only place for teachers to be effective in training up the next generation.  Let me help you develop a strategy for a new teaching opportunity.
 
-![BethTeaching](img\Beth teaching.jpg)
+![BethTeaching](img\BethTeaching.jpg)
