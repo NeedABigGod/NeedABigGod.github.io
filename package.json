@@ -32,5 +32,8 @@
 		"tslib": "^2.2.0",
 		"typescript": "^4.3.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fortawesome/free-regular-svg-icons": "^5.15.3"
+	}
 }

@@ -1,3 +1,3 @@
-# Contact Section
+# Contact
 
 ejmcgwire@use.startmail.com

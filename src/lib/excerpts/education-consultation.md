@@ -1,8 +1,8 @@
 ---
-layout: section
+layout: excerpt
 ---
 
-Education Opportunity Consultation
+# Education Opportunity Consultation
 
 Better than homeschool, individual education approaches the specific needs of each student.  I will work with you to establish the right education opportunities for your children, and your family.
 

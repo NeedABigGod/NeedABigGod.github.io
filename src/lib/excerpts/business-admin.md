@@ -1,8 +1,8 @@
 ---
-layout: section
+layout: excerpt
 ---
 
-Business Administration and Consulting
+# Business Administration and Consulting
 
 From simple clerical to process efficiency and business consultation
 
