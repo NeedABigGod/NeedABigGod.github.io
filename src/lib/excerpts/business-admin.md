@@ -4,6 +4,6 @@ layout: excerpt
 
 # Business Administration and Consulting
 
-From simple clerical to process efficiency and business consultation
+Improving operational and process efficiency for your business
 
 ![Process Efficiency](img\BusinessAdminProcess.jpg)
