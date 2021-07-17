@@ -1,13 +1,12 @@
 <script lang="ts">
-	import { tick } from 'svelte'
-	import About from '$lib/about.md'
-	import Contact from '$lib/contact.md'
 	import Icon from 'svelte-awesome'
-	import { bars, angleDoubleRight, angleDoubleLeft } from 'svelte-awesome/icons'
+	import { bars } from 'svelte-awesome/icons'
 	import { faTimesCircle } from '@fortawesome/free-regular-svg-icons'
 	import '../normalize.css'
 	import '@fontsource/niramit/index.css'
 	import '@fontsource/bellota/index.css'
+	import About from '$lib/about.svelte'
+	import Contact from '$lib/contact.md'
 	// Service Excerpts
 	import ExBusinessAdmin from '$lib/excerpts/business-admin.md'
 	import ExEdConsult from '$lib/excerpts/education-consultation.md'
@@ -38,16 +37,17 @@
 	<div class="landing inner">
 		<h1>EJ McGwire</h1>
 		<div class="landing-links">
-			<a href="#services">Services</a>
-			<a href="#showcase">Showcase</a>
-			<a href="#contact">Contact</a>
+			<a href="#services" class="one">Services</a>
+			<a href="#showcase" class="two">Showcase</a>
+			<a href="#contact" class="three">Contact</a>
 		</div>
 	</div>
 </div>
 
 <div class="section about outer">
 	<div class="about inner">
-		<About />
+		<img src="img/bio-pic-framed.png" alt="Portrait - Elizabeth Joy McGwire" class="bio-pic">
+		<div class="bio-blurbs"><About /></div>
 		<a href="/about" class="link-continue bttn-link">Full Bio ➧</a>
 	</div>
 </div>
@@ -121,6 +121,7 @@
 			flex-direction: row
 			justify-content: center
 			height: 40px
+			border-bottom: $nav-border
 			transform: translateX(0)
 			transition: none
 		&.open
@@ -162,6 +163,8 @@
 		color: $nav-text
 		background-color: $coffee
 		border: none
+		border-left: $nav-border
+		border-bottom: $nav-border
 		border-bottom-left-radius: $nav-border-radius
 		z-index: 9000
 		@media (min-width: $tablet-width)
@@ -187,6 +190,7 @@
 	.section
 		display: flex
 		flex-direction: column
+		position: relative
 		width: 100%
 	.landing
 		color: $light-text
@@ -203,18 +207,81 @@
 		align-items: center
 	.landing h1
 		font-size: 2.5em
+		@media (min-width: $tablet-width)
+			font-size: 3.5em
 	.landing-links
 		display: flex
-		flex-direction: rowr
+		flex-direction: row
+		position: relative
+		@media (min-width: $tablet-width)
+			justify-content: space-between
+			width: 400px
 		a
 			display: flex
 			justify-content: center
 			align-items: center
-			width: 7.3ch
-			height: 7.3ch
+			position: absolute
+			width: 7.5ch
+			height: 7.5ch
 			color: $light-text
 			border: 4px solid $light-text
 			border-radius: 9999px
+			@media (min-width: $tablet-width)
+				position: relative
+		a.one
+			left: calc(-7.5ch - 50px)
+			@media (min-width: $tablet-width)
+				left: unset
+		a.two
+			left: 50px
+			@media (min-width: $tablet-width)
+				left: unset
+		a.three
+			top: 80px
+			left: -3.75ch
+			@media (min-width: $tablet-width)
+				top: unset
+				left: unset
+
+	.about.outer
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 50px 0
+	.about.inner
+		display: flex
+		flex-direction: column
+		align-items: center
+		position: relative
+		width: calc(100% - 20px)
+		padding-bottom: 60px
+		@media (min-width: $tablet-width)
+			max-width: 800px
+	.bio-pic
+		width: 80vw
+		max-width: 420px
+	.bio-blurbs
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: center
+		:global(div)
+			margin: 20px
+			@media (min-width: $tablet-width)
+				width: calc(50% - 40px)
+		:global(h2, p)
+			text-align: center
+
+	.contact.outer
+		display: flex
+		flex-direction: column
+		align-items: center
+	.contact.inner
+		display: flex
+		flex-direction: column
+		align-items: center
+		@media (min-width: $tablet-width)
+			max-width: 800px
 
 	//@media screen and (max-width: wide-tablet-width)
 </style>
