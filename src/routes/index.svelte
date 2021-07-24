@@ -28,10 +28,14 @@
 		<a href="#showcase" class="nav-link">Showcase</a>
 		<a href="#contact" class="nav-link">Contact</a>
 	</div>
-	<button id="close-nav" on:click={() => navOpen = false}><Icon data={faTimesCircle} scale="3" label="close nav"/></button>
+	<button id="close-nav" on:click={() => (navOpen = false)}>
+		<Icon data={faTimesCircle} scale="3" label="close nav" />
+	</button>
 </nav>
 
-<button id="open-nav" on:click={() => navOpen = true}><Icon data={bars} scale="2" label="open nav"/></button>
+<button id="open-nav" on:click={() => (navOpen = true)}>
+	<Icon data={bars} scale="2" label="open nav" />
+</button>
 
 <div class="section landing outer">
 	<div class="landing inner">
@@ -46,19 +50,43 @@
 
 <div class="section about outer">
 	<div class="about inner">
-		<img src="img/bio-pic-framed.png" alt="Portrait - Elizabeth Joy McGwire" class="bio-pic">
-		<div class="bio-blurbs"><About /></div>
+		<img
+			src="img/bio-pic-framed.png"
+			alt="Portrait - Elizabeth Joy McGwire"
+			class="bio-pic"
+		/>
+		<div class="bio-blurbs">
+			<About />
+		</div>
 		<a href="/about" class="link-continue bttn-link">Full Bio ➧</a>
 	</div>
 </div>
 
 <div class="section services outer">
 	<div class="services inner">
+		<h1>Services</h1>
+		<div class="service-list">
+			<div class="service-entry left">
+				<div><ExBusinessAdmin /></div>
+			</div>
+			<div class="service-entry right">
+				<div><ExEdConsult /></div>
+			</div>
+			<div class="service-entry left">
+				<div><ExProjectManagement /></div>
+			</div>
+		</div>
 	</div>
 </div>
 
 <div class="section showcase outer">
 	<div class="showcase inner">
+		<h1>Past Projects</h1>
+		<div class="project-list">
+			<div class="project-entry left"><ExCarriageHouse /></div>
+			<div class="project-entry right"><ExGroundSupport /></div>
+			<div class="project-entry left"><ExMasterBath /></div>
+		</div>
 	</div>
 </div>
 
@@ -269,8 +297,53 @@
 			margin: 20px
 			@media (min-width: $tablet-width)
 				width: calc(50% - 40px)
-		:global(h2, p)
+		:global(h2), :global(p)
 			text-align: center
+
+	.services.outer
+		display: flex
+		flex-direction: column
+		align-items: center
+	.services.inner
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+	.service-list
+		display: flex
+		flex-direction: column
+		width: 100%
+	.service-entry
+		flex: 0 0 140px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		padding: 1ch 0
+		color: $light-text
+		overflow: hidden
+		&>div
+			flex: 0 1 900px
+			display: flex
+			flex-direction: row
+		&.left>div
+			justify-content: flex-start
+		&.right>div
+			justify-content: flex-end
+		&:nth-of-type(1n)
+			background-color: $charcoal
+		&:nth-of-type(2n)
+			background-color: $middle-blue
+		&:nth-of-type(3n)
+			background-color: $celadon-blue
+
+	.showcase.outer
+		display: flex
+		flex-direction: column
+		align-items: center
+	.showcase.inner
+		display: flex
+		flex-direction: column
+		align-items: center
 
 	.contact.outer
 		display: flex

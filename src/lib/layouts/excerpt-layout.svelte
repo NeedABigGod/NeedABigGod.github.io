@@ -1,19 +1,17 @@
-<script>
-	import { fly } from 'svelte/transition'
-	export let transitionScale = 1
-</script>
-
-<div
-	class="container"
-	in:fly={{ x: 800 * transitionScale }}
-	out:fly={{ x: -800 * transitionScale }}
->
-	<slot />
-</div>
+<div><slot /></div>
 
 <style>
-	/* Investigate why MDSVEX errors when trying to use the preprocessors. */
-	.container {
-		position: absolute;
+	div {
+		max-width: 500px;
+	}
+	div :global(h2) {
+		padding: 0;
+		margin: 0.5ch 0 1ch 0;
+		font-size: 1.2em;
+	}
+	div :global(p) {
+		padding: 0;
+		margin: 0;
+		font-size: 0.9em;
 	}
 </style>
