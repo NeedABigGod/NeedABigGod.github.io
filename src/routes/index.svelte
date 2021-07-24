@@ -1,41 +1,16 @@
 <script lang="ts">
-	import Icon from 'svelte-awesome'
-	import { bars } from 'svelte-awesome/icons'
-	import { faTimesCircle } from '@fortawesome/free-regular-svg-icons'
 	import '../normalize.css'
 	import '@fontsource/niramit/index.css'
 	import '@fontsource/bellota/index.css'
+	import Icon from 'svelte-awesome'
+	import { chevronRight } from 'svelte-awesome/icons'
 	import About from '$lib/about.svelte'
 	import Contact from '$lib/contact.md'
 	// Service Excerpts
 	import ExBusinessAdmin from '$lib/excerpts/business-admin.md'
 	import ExEdConsult from '$lib/excerpts/education-consultation.md'
 	import ExProjectManagement from '$lib/excerpts/project-management.md'
-	// Project Excerpts
-	import ExCarriageHouse from '$lib/excerpts/carriage-house.md'
-	import ExGroundSupport from '$lib/excerpts/ground-support.md'
-	import ExMasterBath from '$lib/excerpts/master-bath.md'
-
-	let navOpen = false
 </script>
-
-<nav class:open={navOpen}>
-	<div>
-		<a id="nav-link-home" href="/">EJ McGwire</a>
-		<div class="nav-spacer" />
-		<a href="#about" class="nav-link">About</a>
-		<a href="#services" class="nav-link">Services</a>
-		<a href="#showcase" class="nav-link">Showcase</a>
-		<a href="#contact" class="nav-link">Contact</a>
-	</div>
-	<button id="close-nav" on:click={() => (navOpen = false)}>
-		<Icon data={faTimesCircle} scale="3" label="close nav" />
-	</button>
-</nav>
-
-<button id="open-nav" on:click={() => (navOpen = true)}>
-	<Icon data={bars} scale="2" label="open nav" />
-</button>
 
 <div class="section landing outer">
 	<div class="landing inner">
@@ -83,9 +58,38 @@
 	<div class="showcase inner">
 		<h1>Past Projects</h1>
 		<div class="project-list">
-			<div class="project-entry left"><ExCarriageHouse /></div>
-			<div class="project-entry right"><ExGroundSupport /></div>
-			<div class="project-entry left"><ExMasterBath /></div>
+			<a href="/projects/carriage-house" class="project-link">
+				<p>Carriage House</p>
+				<div class="link-arrow">
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+				</div>
+			</a>
+			<a href="/projects/ground-support" class="project-link">
+				<p>Ground Support Equipment Training</p>
+				<div class="link-arrow">
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+				</div>
+			</a>
+			<a href="/projects/master-bath" class="project-link">
+				<p>Master Bath Remodel</p>
+				<div class="link-arrow">
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+				</div>
+			</a>
+			<a href="/projects/project-four" class="project-link">
+				<p>Fourth Project</p>
+				<div class="link-arrow">
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+					<Icon data={chevronRight} scale="3" class="linkArrow" />
+				</div>
+			</a>
 		</div>
 	</div>
 </div>
@@ -131,89 +135,6 @@
 			max-width: 100%
 	
 	/* */
-
-	nav
-		position: fixed
-		top: 0
-		left: 0
-		right: 0
-		display: flex
-		flex-direction: column
-		height: 100vh
-		color: $nav-text
-		background-color: $nav-bg
-		z-index: 9999
-		transform: translateX(100vw)
-		transition: transform 0.6s
-		@media (min-width: $tablet-width)
-			flex-direction: row
-			justify-content: center
-			height: 40px
-			border-bottom: $nav-border
-			transform: translateX(0)
-			transition: none
-		&.open
-			transform: translateX(0)
-		&> div
-			display: flex
-			flex: 0 1 100%
-			flex-direction: column
-			align-items: center
-			overflow: hidden
-			padding: 10vh 0
-			@media (min-width: $tablet-width)
-				flex: 0 1 980px
-				flex-direction: row
-				align-items: stretch
-				padding: 0
-		a
-			display: flex
-			flex: 0 0 4ex
-			width: 100%
-			justify-content: center
-			align-items: center
-			font-size: 1.4rem
-			color: $nav-text
-			transition: background-color 0.2s
-			@media (min-width: $tablet-width)
-				flex: 0 1 auto
-				width: auto
-				font-size: 1.15rem
-				padding: 0 1ch
-			&:hover, &:focus
-				background-color: $nav-link-focus
-	#open-nav
-		position: fixed
-		top: 0
-		right: 0
-		width: 60px
-		height: 60px
-		color: $nav-text
-		background-color: $coffee
-		border: none
-		border-left: $nav-border
-		border-bottom: $nav-border
-		border-bottom-left-radius: $nav-border-radius
-		z-index: 9000
-		@media (min-width: $tablet-width)
-			display: none
-	#close-nav
-		position: absolute
-		top: 0
-		right: 0
-		width: 60px
-		height: 60px
-		color: $nav-text
-		background-color: transparent
-		border: none
-		border-bottom-left-radius: $nav-border-radius
-		@media (min-width: $tablet-width)
-			display: none
-	.nav-spacer
-		display: none
-		flex: 1 1 auto
-		@media (min-width: $tablet-width)
-			display: flex
 
 	.section
 		display: flex
@@ -344,6 +265,40 @@
 		display: flex
 		flex-direction: column
 		align-items: center
+	.project-list
+		display: grid
+		max-width: 800px
+		@media (min-width: $tablet-width)
+			grid-template-columns: 1fr 1fr
+	.project-link
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		position: relative
+		margin: 0 10px 20px 10px
+		padding: 1ex 1ch
+		height: 180px
+		width: 240px
+		color: $text-dark
+		border: 12px solid $mystic
+		border-top: none
+		border-bottom: none
+		border-radius: 30px
+		font-size: 1.3em
+		transition: border-color 0.4s, border-radius 0.4s
+		&>p
+			text-align: center
+			transition: opacity 0.4s
+		:global(svg)
+			color: $nadeshiko-pink
+			transition: opacity 0.4s
+		&:hover, &:focus
+			border-color: $nadeshiko-pink
+			&>p
+				opacity: 50%
+			:global(svg)
+				opacity: 20%
 
 	.contact.outer
 		display: flex
