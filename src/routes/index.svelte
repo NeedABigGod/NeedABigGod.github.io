@@ -15,14 +15,18 @@
 					class="bio-pic"
 				/>
 				<div class="id-box">
-					<h1>Beth McGwire</h1>
-					<h2>Legends Realty</h2>
+					<span class="name-display">Beth McGwire</span>
+					<span class="realtor-id">SA699412000</span>
+					<span class="affiliation">Legends Realty</span>
 				</div>
 				<div class="spacer" />
 			</div>
 		</div>
 		<div class="landing lower-banner">
-			<Tagline />
+			<div class="center-box">
+				<Tagline />
+				<a href="/about" class="bio-link">Full Bio ❯</a>
+			</div>
 		</div>
 	</div>
 </div>
@@ -47,22 +51,15 @@
 
 <style lang="sass">
 	:global
-		html
-			font-size: 16pt
-			font-family: 'Poppins', sans-serif
-		body
-			background-color: $site-bg
-			&>*
-				max-width: 100%
-				overflow-x: hidden
 		#svelte
 			display: flex
 			flex-direction: column
 			align-items: center
 			padding-bottom: 40vh
-		h1, h2, h3
-			font-family: 'Poppins', sans-serif
+		h1, h2, h3, span
 			font-weight: 200
+		p, a
+			font-weight: 400
 		a
 			text-decoration: none
 		.bttn-link
@@ -88,23 +85,25 @@
 		justify-content: center
 		align-items: center
 		width: 100vw
-		margin-bottom: 60px
-		overflow-x: hidden
+		margin-bottom: 120px
 	.inner
 		display: flex
 		flex-direction: column
 
 	.landing.outer
+		position: relative
 		display: flex
-		justify-content: flex-start
+		flex: 1 0 70vh
+		justify-content: center
 		align-items: flex-start
-		min-height: 70vh
 		background-color: $landing-background
+		@media (min-height: $fullsize-height)
+			flex: 0 0 756px
 	.landing.inner
 		display: flex
 		flex-direction: column
-		align-items: flex-start
-		width: 100%
+		align-items: center
+		height: 100%
 	.landing.upper-banner
 		flex: 0 0 50vh
 		display: flex
@@ -112,8 +111,9 @@
 		justify-content: center
 		align-items: flex-end
 		width: 100vw
-		margin-bottom: $portrait-bleed
 		background-color: $landing-upper
+		@media (min-height: $fullsize-height)
+			flex: 0 0 540px
 	.title-div
 		display: flex
 		flex: 0 1 1000px
@@ -130,34 +130,77 @@
 		@media (min-width: $phablet-width)
 			flex: 0 0 240px
 	.id-box
-		transform: translateY(1.2em)
+		transform: translateY(2ex)
 		@media (min-width: $phablet-width)
-			transform: translateY(1.8em)
-		h1
+			transform: translateY(3ex)
+		.name-display
+			display: block
 			flex: 0 1 8ch
-			font-size: 1.85em
+			font-size: 2em
 			color: $landing-upper-text
 			margin: 0
 			@media (min-width: $phablet-width)
 				font-size: 3.5em
-		h2
+		.realtor-id
+			display: block
+			font-size: .8em
+			color: $landing-upper-text
+			margin: 0
+			padding-left: 2px
+			@media (min-width: $phablet-width)
+				font-size: 1.1em
+				padding-left: 3px
+		.affiliation
+			display: block
 			margin: 0
 			color: $primary
 			font-size: 1em
+			font-weight: 400
 			@media (min-width: $phablet-width)
 				font-size: 1.5em
 	.landing.lower-banner
+		flex: 1 1 100%
 		display: flex
 		flex-direction: row
 		justify-content: center
 		align-items: center
-		width: 100vw
+		width: 100%
 		color: $landing-lower-text
-
+		.center-box
+			position: relative
+			flex: 0 1 864px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			height: 100%
+	.bio-link
+		position: absolute
+		display: flex
+		justify-content: center
+		align-items: center
+		bottom: -10px
+		right: 20px
+		width: 120px
+		height: 40px
+		border-radius: 9999px
+		color: $tertiary-light
+		background-color: $primary
+		transition: all 0.2s
+		@media (min-width: $tablet-width)
+			right: 100px
+		&:hover, &:focus
+			bottom: -15px
+			right: 15px
+			width: 130px
+			height: 50px
+			color: $text-light
+			background-color: $primary-light
+			@media (min-width: $tablet-width)
+				right: 95px
 
 	.contact.section
-		margin-top: 90px
-		margin-bottom: 150px
+		margin-top: 30px
+		margin-bottom: 200px
 	.contact.outer
 		display: flex
 		flex-direction: column

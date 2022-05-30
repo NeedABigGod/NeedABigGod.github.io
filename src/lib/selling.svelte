@@ -1,4 +1,9 @@
 <h1>For Sellers</h1>
+<p class="summary">
+	Before you sell, here are some links to get the information you may find
+	useful in getting your property ready. Contact me and I will help you with all
+	the details of the selling process.
+</p>
 <div class="contents">
 	<a href="https://roc.az.gov/"> Find a Contractor </a>
 	<a href="https://www.realtor.com/myhome/">Home Value Tracker</a>
@@ -7,7 +12,12 @@
 
 <style lang="sass">
 	h1
+		margin: 0
 		padding: 0 12px
+	.summary
+		max-width: 836px
+		padding: 0 14px
+		font-size: 0.85em
 	.contents
 		box-sizing: border-box
 		display: grid
@@ -23,11 +33,11 @@
 			box-sizing: border-box
 			height: 100px
 			padding: 1ex 1ch
-			font-size: 0.9em
+			font-size: 0.85em
 			font-weight: 400
 			color: $accent-light
 			background-color: $primary
-			border-left: 9px solid $accent-shade
+			border-left: 9px solid $tertiary
 			transition: background-color 0.2s, border 0.2s
 			@media (min-width: $tablet-width)
 				width: calc((836px / 3) - 12px)
@@ -35,5 +45,5 @@
 				margin-bottom: 0
 			&:hover, &:focus
 				background-color: $primary-shade
-				border-left: 18px solid $accent
+				border-left: 18px solid $tertiary-light
 </style>

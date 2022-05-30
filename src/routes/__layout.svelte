@@ -2,7 +2,7 @@
 	import '@fontsource/poppins/200.css'
 	import '@fontsource/poppins/400.css'
 	import Icon from 'svelte-awesome'
-	import { bars, envelope, home } from 'svelte-awesome/icons'
+	import { bars, envelope } from 'svelte-awesome/icons'
 	import { faTimesCircle } from '@fortawesome/free-regular-svg-icons'
 	import legendsHouse from '$lib/icons/legends-house'
 	import '../normalize.css'
@@ -30,7 +30,7 @@
 		<div class="nav-spacer" />
 		<a href="/#buying" class="nav-link" on:click={close}>Buying</a>
 		<a href="/#selling" class="nav-link" on:click={close}>Selling</a>
-		<a href="/blog" class="nav-link" on:click={close}>Blog</a>
+		<!-- <a href="/blog" class="nav-link" on:click={close}>Blog</a> -->
 		<a href="/#contact" class="nav-link" on:click={close}>
 			<Icon data={envelope} scale={2.25} label="nav contact" class="navIcon" />
 		</a>
@@ -85,7 +85,10 @@
 				flex-direction: row
 				align-items: stretch
 				padding: 0
+				overflow: visible
 		a
+			position: relative
+			top: 0
 			display: flex
 			flex: 0 0 4ex
 			width: 100%
@@ -94,16 +97,18 @@
 			font-size: 1.4rem
 			font-weight: 200
 			color: $nav-text
-			transition: background-color 0.2s
+			transition: background-color 0.2s, height 0.2s
 			@media (min-width: $tablet-width)
 				flex: 0 1 auto
 				width: auto
+				height: 100%
 				font-size: 1.15rem
 				padding: 0 1ch
 			&:hover, &:focus
 				background-color: $nav-link-focus
 				@media (min-width: $tablet-width)
 					background-color: $nav-bar-link-focus
+					height: calc(100% + 12px)
 	#open-nav
 		position: fixed
 		top: 12px
@@ -158,6 +163,9 @@
 	:global
 		html
 			scroll-behavior: smooth
+			font-size: 16pt
+			font-family: 'Poppins', sans-serif
+			background-color: $site-bg
 		body > div
 			display: flex
 			flex-direction: column
