@@ -24,7 +24,9 @@ export default {
 			fallback: null,
 			precompress: false
 		}),
-
+		prerender: {
+			default: true
+		},
 		vite: {
 			server: {
 				cors: false
