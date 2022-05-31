@@ -198,6 +198,11 @@
 			@media (min-width: $tablet-width)
 				right: 95px
 
+	.buying.inner, .selling.inner
+		flex: 0 1 400px
+		@media (min-width: $tablet-width)
+			flex: unset
+
 	.contact.section
 		margin-top: 30px
 		margin-bottom: 200px
