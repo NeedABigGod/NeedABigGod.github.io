@@ -16,7 +16,6 @@
 				/>
 				<div class="id-box">
 					<span class="name-display">Beth McGwire</span>
-					<span class="realtor-id">SA699412000</span>
 					<span class="affiliation">Legends Realty</span>
 				</div>
 				<div class="spacer" />
