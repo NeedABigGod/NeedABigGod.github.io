@@ -14,15 +14,15 @@
 	</div>
 	<div class="buyer-links">
 		<a href="https://azre.gov/consumers/topics-research-purchasing-real-estate">
-			Topics to Research
+			ADRE — Topics to Research
 		</a>
-		<a href="https://homeplusaz.com/">Home Buyer Down Payment Assistance</a>
+		<a href="https://azre.gov/persona/consumers">
+			ADRE — Consumer Resources
+		</a>
 		<a href="https://www.tucsonrealtors.org/consumer-resources/">
 			TAR Consumer Resources
 		</a>
-		<a href="https://homeplusaz.com/">
-			Arizona Department of Real Estate<br />Consumer Resources
-		</a>
+		<a href="https://homeplusaz.com/">Home Buyer Down Payment Assistance</a>
 	</div>
 </div>
 
