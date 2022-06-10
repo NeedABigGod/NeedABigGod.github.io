@@ -31,25 +31,25 @@ import Pitch from '$lib/pitch.svelte'
 	</div>
 </div>
 
-<!-- <div id="pitch" class="section pitch outer">
+<div id="pitch" class="section pitch outer">
 	<div class="pitch inner">
 		<Pitch />
 	</div>
-</div> -->
+</div>
 
-<div id="buying" class="section buying outer">
+<div id="buying" class="section buying outer anchor">
 	<div class="buying inner">
 		<Buying />
 	</div>
 </div>
 
-<div id="selling" class="section selling outer">
+<div id="selling" class="section selling outer anchor">
 	<div class="selling inner">
 		<Selling />
 	</div>
 </div>
 
-<div id="contact" class="section contact outer">
+<div id="contact" class="section contact outer anchor">
 	<div class="contact inner">
 		<Contact />
 	</div>
@@ -95,6 +95,10 @@ import Pitch from '$lib/pitch.svelte'
 	.inner
 		display: flex
 		flex-direction: column
+	.anchor
+		@media (min-width: $tablet-width)
+			padding-top: 40px
+			margin-top: -40px
 
 	.landing.outer
 		position: relative
@@ -147,15 +151,6 @@ import Pitch from '$lib/pitch.svelte'
 			margin: 0
 			@media (min-width: $phablet-width)
 				font-size: 3.5em
-		.realtor-id
-			display: block
-			font-size: .8em
-			color: $landing-upper-text
-			margin: 0
-			padding-left: 2px
-			@media (min-width: $phablet-width)
-				font-size: 1.1em
-				padding-left: 3px
 		.affiliation
 			display: block
 			margin: 0
@@ -204,10 +199,16 @@ import Pitch from '$lib/pitch.svelte'
 			@media (min-width: $tablet-width)
 				right: 95px
 
-	.buying.inner, .selling.inner
+	.pitch.inner, .buying.inner, .selling.inner
 		flex: 0 1 400px
 		@media (min-width: $tablet-width)
 			flex: unset
+
+	.pitch.inner
+		flex: 0 1 400px
+		align-items: center
+		@media (min-width: $tablet-width)
+			flex: 0 1 950px
 
 	.contact.section
 		margin-top: 30px

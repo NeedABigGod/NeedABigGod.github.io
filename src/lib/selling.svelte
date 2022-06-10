@@ -14,10 +14,12 @@
 	h1
 		margin: 0
 		padding: 0 12px
+		color: $primary-light
 	.summary
 		max-width: 836px
 		padding: 0 14px
 		font-size: 0.85em
+		line-height: 1.5
 	.contents
 		box-sizing: border-box
 		display: grid
