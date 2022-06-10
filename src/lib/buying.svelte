@@ -7,15 +7,16 @@
 <div class="contents">
 	<div class="market-data">
 		<h2>Market Data</h2>
-		<iframe style="border: 0;" width="400" height="300" src="https://mlssaz.stats.showingtime.com/infoserv/s-v1/Ltue-t34?w=400&h=300" title="Median Days on Market" />
+		<img
+			src="https://mlssaz.stats.showingtime.com/infoserv/s-v1/LmgE-Ll3?w=400&h=300"
+			alt="Median Sales Prices"
+		/>
 	</div>
 	<div class="buyer-links">
 		<a href="https://azre.gov/consumers/topics-research-purchasing-real-estate">
 			ADRE — Topics to Research
 		</a>
-		<a href="https://azre.gov/persona/consumers">
-			ADRE — Consumer Resources
-		</a>
+		<a href="https://azre.gov/persona/consumers"> ADRE — Consumer Resources </a>
 		<a href="https://www.tucsonrealtors.org/consumer-resources/">
 			TAR Consumer Resources
 		</a>
@@ -27,10 +28,12 @@
 	h1
 		margin: 0
 		padding: 0 12px
+		color: $primary-light
 	.summary
 		max-width: 836px
 		padding: 0 14px
 		font-size: 0.85em
+		line-height: 1.5
 	.contents
 		display: flex
 		flex-direction: column
@@ -42,6 +45,7 @@
 			margin-top: 0
 			margin-bottom: 9px
 			font-weight: 400
+			color: $primary
 			border-top: 3px solid $primary-light
 	.buyer-links
 		display: flex
