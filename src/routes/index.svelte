@@ -3,7 +3,7 @@
 	import Tagline from '$lib/tagline.svelte'
 	import Buying from '$lib/buying.svelte'
 	import Selling from '$lib/selling.svelte'
-	// import Pitch from '$lib/pitch.svelte'
+	import Pitch from '$lib/pitch.svelte'
 </script>
 
 <div class="section landing outer">
