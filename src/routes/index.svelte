@@ -3,6 +3,7 @@
 	import Tagline from '$lib/tagline.svelte'
 	import Buying from '$lib/buying.svelte'
 	import Selling from '$lib/selling.svelte'
+import Pitch from '$lib/pitch.svelte'
 </script>
 
 <div class="section landing outer">
@@ -29,6 +30,12 @@
 		</div>
 	</div>
 </div>
+
+<!-- <div id="pitch" class="section pitch outer">
+	<div class="pitch inner">
+		<Pitch />
+	</div>
+</div> -->
 
 <div id="buying" class="section buying outer">
 	<div class="buying inner">

@@ -7,10 +7,7 @@
 <div class="contents">
 	<div class="market-data">
 		<h2>Market Data</h2>
-		<img
-			src="https://mlssaz.stats.showingtime.com/infoserv/s-v1/K41a-ozc?w=400&h=300"
-			alt="Median Sales Prices"
-		/>
+		<iframe style="border: 0;" width="400" height="300" src="https://mlssaz.stats.showingtime.com/infoserv/s-v1/Ltue-t34?w=400&h=300" title="Median Days on Market" />
 	</div>
 	<div class="buyer-links">
 		<a href="https://azre.gov/consumers/topics-research-purchasing-real-estate">
