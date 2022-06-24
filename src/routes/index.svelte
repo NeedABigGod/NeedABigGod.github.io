@@ -56,35 +56,6 @@
 </div>
 
 <style lang="sass">
-	:global
-		#svelte
-			display: flex
-			flex-direction: column
-			align-items: center
-			padding-bottom: 40vh
-		h1, h2, h3, span
-			font-weight: 200
-		p, a
-			font-weight: 400
-		a
-			text-decoration: none
-		.bttn-link
-			transition: background-color 0.2s
-			padding: 0.8ex 0.8ch
-			color: $bttn-link-text
-			background-color: $bttn-link-bg
-			border-radius: $bttn-link-radius
-			&:hover, &:focus
-				background-color: $bttn-link-bg-hover
-		.link-continue
-			position: absolute
-			right: 10px
-			bottom: 10px
-		.section img
-			max-width: 100%
-	
-	/* */
-
 	.section
 		display: flex
 		flex-direction: row

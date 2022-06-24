@@ -30,7 +30,7 @@
 		<div class="nav-spacer" />
 		<a href="/#buying" class="nav-link" on:click={close}>Buying</a>
 		<a href="/#selling" class="nav-link" on:click={close}>Selling</a>
-		<!-- <a href="/blog" class="nav-link" on:click={close}>Blog</a> -->
+		<a href="/blog" class="nav-link" on:click={close}>Blog</a>
 		<a href="/#contact" class="nav-link" on:click={close}>
 			<Icon data={envelope} scale={2.25} label="nav contact" class="navIcon" />
 		</a>
@@ -49,6 +49,35 @@
 </footer>
 
 <style lang="sass">
+	:global
+		#svelte
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding-bottom: 40vh
+		div
+			box-sizing: border-box
+		h1, h2, h3, span
+			font-weight: 200
+		p, a
+			font-weight: 400
+		a
+			text-decoration: none
+		.bttn-link
+			transition: background-color 0.2s
+			padding: 0.8ex 0.8ch
+			color: $bttn-link-text
+			background-color: $bttn-link-bg
+			border-radius: $bttn-link-radius
+			&:hover, &:focus
+				background-color: $bttn-link-bg-hover
+		.link-continue
+			position: absolute
+			right: 10px
+			bottom: 10px
+		.section img
+			max-width: 100%
+			
 	nav
 		position: fixed
 		top: 0
@@ -96,6 +125,7 @@
 			align-items: center
 			font-size: 1.4rem
 			font-weight: 200
+			text-decoration: none
 			color: $nav-text
 			transition: background-color 0.2s, height 0.2s
 			@media (min-width: $tablet-width)
