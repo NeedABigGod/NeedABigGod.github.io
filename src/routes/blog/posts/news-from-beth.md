@@ -4,12 +4,24 @@ date: '2022-07-28'
 layout: blog
 ---
 
-# Yard Help from Houselogic
+I was visiting my daughter recently. She is restoring a 1914 Colonial home and
+is contemplating how to redo the landscaping. She mentioned the idea of building
+a retaining wall around the property.
 
-I was visiting my daughter recently.  She is restoring a 1914 Colonial home and is contemplating how to redo the landscaping.  She mentioned the idea of building a retaining wall around the property.
+> Check back later to read more about my daughter's project. It's a beautiful
+> home that is getting a lot of love as she works through the long list of
+> restoration projects.
 
->Check back later to read more about my daughter's project.  It's a beautiful home that is getting a lot of love as she works through the long list of restoration projects.
+How fortunate to find this great article from Houselogic on how to build a
+retaining wall.
 
-How fortunate to find this great article from Houselogic on how to build a retaining wall.
-
-<div style="letter-spacing:normal!important;width:485px!important; padding:0 40px!important; font-family:Arial,sans-serif!important;"> <ul style="letter-spacing:normal!important;list-style:none!important;margin:0 0 30px!important;padding-left:0;float:left;width:485px;font-family:Arial,sans-serif!important;"> <li style="letter-spacing:normal!important;font-family:Arial,sans-serif!important;display:block;vertical-align:baseline!important;padding:30px 0!important; border-bottom:1px solid #ebf0f2!important; color:#777!important; font-size:12px!important; line-height:20px!important;float:left;width:485px;"> <div style="letter-spacing:normal!important;font-family:Arial,sans-serif!important;position:relative!important; float:left!important; width:179px!important;"> <a href=https://www.houselogic.com/by-room/yard-patio/how-to-build-a-retaining-wall/ style="letter-spacing:normal!important;font-family:Arial,sans-serif!important;color:#16a8d3!important; text-decoration:none!important;"> <img style="border:0 none;" src=https://static.houselogic.com/content/images/sized/article_how-to-build-a-retaining-wall_1f5d3189820b53b6984817b1bc7b95b5_3x2_jpg_168x112_q85.jpg alt="" title="How to Build a Retaining Wall" /> </a> </div> <h3 style="letter-spacing:normal!important;font-family:Arial,sans-serif!important;float:left;width:306px;margin:0; font-size:16px!important; font-weight:bold!important; padding-bottom:16px;"><a style="color:#16a8d3!important; text-decoration:none!important;" href=https://www.houselogic.com/by-room/yard-patio/how-to-build-a-retaining-wall/ target="_blank">How to Build a Retaining Wall</a></h3> <p style="letter-spacing:normal!important;font-family:Arial,sans-serif!important;margin:0;float:left;width:306px;">Need help with soil problems like erosion? Consider a retaining wall — and see what’s involved. <a target="_blank" style="color:#16a8d3!important; text-decoration:none!important;" href=https://www.houselogic.com/by-room/yard-patio/how-to-build-a-retaining-wall/>Read</a></p> <div style="clear:both;"></div> </li> </ul> <div style="float:left;width:485px;"> <p style="letter-spacing:normal!important;font-family:Arial,sans-serif!important;margin:0 0 12px!important; color:#000!important; font-size:12px!important;">Visit <a style="color:#16a8d3!important; text-decoration:none!important;" href=https://www.houselogic.com>houselogic.com</a> for more articles like this.</p> <p style="letter-spacing:normal!important;font-family:Arial,sans-serif!important;margin:0 0 12px!important; color:#000!important; font-size:11px!important;">© Copyright 2022 NATIONAL ASSOCIATION OF REALTORS®</p> </div> </div>
+<div class="external-article-outer">
+  <div class="external-article-image-box">
+    <img class="external-article-image" src="https://static.houselogic.com/content/images/sized/article_how-to-build-a-retaining-wall_1f5d3189820b53b6984817b1bc7b95b5_3x2_jpg_168x112_q85.jpg" alt="Retaining Wall" />
+  </div>
+  <div class="external-article-details">
+    <a href="https://www.houselogic.com/by-room/yard-patio/how-to-build-a-retaining-wall/"><h3>How to Build a Retaining Wall</h3></a>
+    <p>Need help with soil problems like erosion? Consider a retaining wall — and see what’s involved. Visit <a href="https://www.houselogic.com">houselogic.com</a> for more articles like this.</p>
+    <p class="copyright">© Copyright 2022 NATIONAL ASSOCIATION OF REALTORS®</p>
+  </div>
+</div>
