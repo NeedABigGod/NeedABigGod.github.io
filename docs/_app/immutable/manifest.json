@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-76b35285.js",
+    "file": "start-12342f9a.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -12,9 +12,10 @@
       "src/routes/blog/__layout.svelte",
       "src/routes/about.svelte",
       "src/routes/blog/index.svelte",
-      "_a-bit-about-oro-valley-19c1e374.js",
-      "_desert-patio-life-a3f11328.js",
-      "_to-buy-or-not-to-buy-8bc42d42.js",
+      "_a-bit-about-oro-valley-b87e7c48.js",
+      "_desert-patio-life-d146f5b9.js",
+      "_news-from-beth-df8d10c4.js",
+      "_to-buy-or-not-to-buy-93dc4c8e.js",
       "src/routes/index.svelte"
     ]
   },
@@ -51,16 +52,17 @@
     ]
   },
   "src/routes/blog/__layout.svelte": {
-    "file": "pages/blog/__layout.svelte-3f73ab9b.js",
+    "file": "pages/blog/__layout.svelte-7798ad5f.js",
     "src": "src/routes/blog/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_a-bit-about-oro-valley-19c1e374.js",
-      "_desert-patio-life-a3f11328.js",
-      "_to-buy-or-not-to-buy-8bc42d42.js",
+      "_a-bit-about-oro-valley-b87e7c48.js",
+      "_desert-patio-life-d146f5b9.js",
+      "_news-from-beth-df8d10c4.js",
+      "_to-buy-or-not-to-buy-93dc4c8e.js",
       "_index-3685d269.js",
-      "_blog-264767c4.js"
+      "_blog-f10c1de3.js"
     ],
     "css": [
       "assets/pages/blog/__layout.svelte-a764ff47.css"
@@ -79,16 +81,17 @@
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-66551e94.js",
+    "file": "pages/blog/index.svelte-93996923.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_a-bit-about-oro-valley-19c1e374.js",
-      "_desert-patio-life-a3f11328.js",
-      "_to-buy-or-not-to-buy-8bc42d42.js",
+      "_a-bit-about-oro-valley-b87e7c48.js",
+      "_desert-patio-life-d146f5b9.js",
+      "_news-from-beth-df8d10c4.js",
+      "_to-buy-or-not-to-buy-93dc4c8e.js",
       "_index-3685d269.js",
-      "_blog-264767c4.js"
+      "_blog-f10c1de3.js"
     ],
     "css": [
       "assets/pages/blog/index.svelte-fa5071f1.css"
@@ -108,33 +111,43 @@
     ]
   },
   "src/routes/blog/posts/a-bit-about-oro-valley.md": {
-    "file": "pages/blog/posts/a-bit-about-oro-valley.md-4b741093.js",
+    "file": "pages/blog/posts/a-bit-about-oro-valley.md-624a8c18.js",
     "src": "src/routes/blog/posts/a-bit-about-oro-valley.md",
     "isEntry": true,
     "imports": [
       "_index-3685d269.js",
-      "_blog-264767c4.js",
-      "_a-bit-about-oro-valley-19c1e374.js"
+      "_blog-f10c1de3.js",
+      "_a-bit-about-oro-valley-b87e7c48.js"
     ]
   },
   "src/routes/blog/posts/desert-patio-life.md": {
-    "file": "pages/blog/posts/desert-patio-life.md-9c7822da.js",
+    "file": "pages/blog/posts/desert-patio-life.md-4c6e2ab9.js",
     "src": "src/routes/blog/posts/desert-patio-life.md",
     "isEntry": true,
     "imports": [
       "_index-3685d269.js",
-      "_blog-264767c4.js",
-      "_desert-patio-life-a3f11328.js"
+      "_blog-f10c1de3.js",
+      "_desert-patio-life-d146f5b9.js"
+    ]
+  },
+  "src/routes/blog/posts/news-from-beth.md": {
+    "file": "pages/blog/posts/news-from-beth.md-6cfc685a.js",
+    "src": "src/routes/blog/posts/news-from-beth.md",
+    "isEntry": true,
+    "imports": [
+      "_index-3685d269.js",
+      "_blog-f10c1de3.js",
+      "_news-from-beth-df8d10c4.js"
     ]
   },
   "src/routes/blog/posts/to-buy-or-not-to-buy.md": {
-    "file": "pages/blog/posts/to-buy-or-not-to-buy.md-96220984.js",
+    "file": "pages/blog/posts/to-buy-or-not-to-buy.md-5223b289.js",
     "src": "src/routes/blog/posts/to-buy-or-not-to-buy.md",
     "isEntry": true,
     "imports": [
       "_index-3685d269.js",
-      "_blog-264767c4.js",
-      "_to-buy-or-not-to-buy-8bc42d42.js"
+      "_blog-f10c1de3.js",
+      "_to-buy-or-not-to-buy-93dc4c8e.js"
     ]
   },
   "_index-3685d269.js": {
@@ -149,37 +162,45 @@
       "assets/envelope-ac16b76e.css"
     ]
   },
-  "_a-bit-about-oro-valley-19c1e374.js": {
-    "file": "chunks/a-bit-about-oro-valley-19c1e374.js",
+  "_a-bit-about-oro-valley-b87e7c48.js": {
+    "file": "chunks/a-bit-about-oro-valley-b87e7c48.js",
     "isDynamicEntry": true,
     "imports": [
       "_index-3685d269.js",
-      "_blog-264767c4.js"
+      "_blog-f10c1de3.js"
     ]
   },
-  "_desert-patio-life-a3f11328.js": {
-    "file": "chunks/desert-patio-life-a3f11328.js",
+  "_desert-patio-life-d146f5b9.js": {
+    "file": "chunks/desert-patio-life-d146f5b9.js",
     "isDynamicEntry": true,
     "imports": [
       "_index-3685d269.js",
-      "_blog-264767c4.js"
+      "_blog-f10c1de3.js"
     ]
   },
-  "_to-buy-or-not-to-buy-8bc42d42.js": {
-    "file": "chunks/to-buy-or-not-to-buy-8bc42d42.js",
+  "_news-from-beth-df8d10c4.js": {
+    "file": "chunks/news-from-beth-df8d10c4.js",
     "isDynamicEntry": true,
     "imports": [
       "_index-3685d269.js",
-      "_blog-264767c4.js"
+      "_blog-f10c1de3.js"
     ]
   },
-  "_blog-264767c4.js": {
-    "file": "chunks/blog-264767c4.js",
+  "_to-buy-or-not-to-buy-93dc4c8e.js": {
+    "file": "chunks/to-buy-or-not-to-buy-93dc4c8e.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-3685d269.js",
+      "_blog-f10c1de3.js"
+    ]
+  },
+  "_blog-f10c1de3.js": {
+    "file": "chunks/blog-f10c1de3.js",
     "imports": [
       "_index-3685d269.js"
     ],
     "css": [
-      "assets/blog-79660bcd.css"
+      "assets/blog-ed137b38.css"
     ]
   }
 }

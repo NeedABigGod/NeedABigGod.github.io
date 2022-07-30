@@ -1,4 +1,4 @@
-import{S as O,i as G,s as L,D as q,x as X,y as Y,z as H,A as J,B as C,r as K,p as Q,C as R,X as M,e as m,t as _,k as I,c as d,a as w,h as b,d as n,m as k,Y as U,b as N,g as s,F as y,n as V}from"./index-3685d269.js";import{B as Z}from"./blog-264767c4.js";function ee(p){let t,r,l,h,a,i,u,P,x,f,$,T,c,j,W,v,g,S;return{c(){t=m("p"),r=_(`For me, living in Tucson has been like being on a permanent vacation. We are
+import{S as O,i as G,s as L,D as q,x as X,y as Y,z as H,A as J,B as C,r as K,p as Q,C as R,X as M,e as m,t as _,k as I,c as d,a as w,h as b,d as n,m as k,Y as U,b as N,g as s,F as y,n as V}from"./index-3685d269.js";import{B as Z}from"./blog-f10c1de3.js";function ee(p){let t,r,l,h,a,i,u,P,x,f,$,T,c,j,W,v,g,S;return{c(){t=m("p"),r=_(`For me, living in Tucson has been like being on a permanent vacation. We are
 newer residents, after living in the Pacific Northwest for over thirty years. I
 decided when we started looking for our home, I was going to get a view, either
 of the mountains or the sunset. It seemed like every home here has a view. Well,

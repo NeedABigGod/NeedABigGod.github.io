@@ -1,4 +1,4 @@
-import{S as F,i as O,s as Y,D as W,x as z,y as C,z as H,A as R,B as j,r as D,p as G,C as X,X as q,e as f,k as v,t as k,c as m,a as g,d as a,m as x,h as I,Y as J,b as M,g as r,F as w,n as K}from"./index-3685d269.js";import{B as L}from"./blog-264767c4.js";function Q(c){let t,o,l,u,n,i,d,y,T,_,h,$,b,p,S;return{c(){t=f("p"),o=f("img"),u=v(),n=f("p"),i=k(`No matter the market, we are always perplexed by the decision to buy or to not
+import{S as F,i as O,s as Y,D as W,x as z,y as C,z as H,A as R,B as j,r as D,p as G,C as X,X as q,e as f,k as v,t as k,c as m,a as g,d as a,m as x,h as I,Y as J,b as M,g as r,F as w,n as K}from"./index-3685d269.js";import{B as L}from"./blog-f10c1de3.js";function Q(c){let t,o,l,u,n,i,d,y,T,_,h,$,b,p,S;return{c(){t=f("p"),o=f("img"),u=v(),n=f("p"),i=k(`No matter the market, we are always perplexed by the decision to buy or to not
 buy real estate. If it\u2019s the decision between renting and owning, we weigh the
 costs of the purchase against the costs of maintenance. If it\u2019s the decision to
 invest, the balancing act of tax advantages against return on investment plagues
