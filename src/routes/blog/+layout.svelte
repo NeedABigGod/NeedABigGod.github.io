@@ -1,34 +1,6 @@
-<script lang="ts" context="module">
-	export async function load() {
-		const imports = import.meta.globEager('./posts/**/*.md')
-
-		const posts = []
-		for (const path in imports) {
-			const post = imports[path]
-			if (post) {
-				posts.push({
-					navPath: path.slice(2, -3),
-					...post.metadata,
-					sortTime: new Date(post.metadata.date).getTime()
-				})
-			}
-		}
-
-		const filteredPosts = posts
-			.filter((post) => !post.hidden)
-			.filter((post) => Date.now() > post.sortTime)
-			.sort((a, b) => b.sortTime - a.sortTime)
-
-		return {
-			props: {
-				posts: filteredPosts
-			}
-		}
-	}
-</script>
-
 <script lang="ts">
-	export let posts
+	import type { PageData } from '.svelte-kit/types/src/routes/blog/$types'
+	export let data: PageData
 	let postsClosed = true
 </script>
 
@@ -40,7 +12,7 @@
 			<span class="all-posts">All Posts</span>
 		</div>
 		<div class="link-list" class:closed={postsClosed}>
-			{#each posts as post (post.date)}
+			{#each data.posts as post (post.date)}
 				<a href="/blog/{post.navPath}">
 					<span class="post-title">{post.title}</span>
 					<span class="post-date">{post.date}</span>
