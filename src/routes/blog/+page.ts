@@ -21,8 +21,6 @@ export async function load() {
 		.sort((a, b) => b.sortTime - a.sortTime)
 		.slice(0, showOnly)
 
-	console.log('page.server')
-	console.log(filteredPosts)
 	return {
 		posts: filteredPosts
 	}

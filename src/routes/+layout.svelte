@@ -7,6 +7,7 @@
 	import legendsHouse from '$lib/icons/legends-house'
 	import '../normalize.css'
 	import RequiredInfo from '$lib/required-info.svelte'
+	import PbSqLogoWhite from '$lib/img/pbsq-white.png'
 
 	let navOpen = false
 	function close() {
@@ -31,7 +32,7 @@
 		<a href="/#buying" class="nav-link" on:click={close}>Buying</a>
 		<a href="/#selling" class="nav-link" on:click={close}>Selling</a>
 		<a href="/blog" class="nav-link" on:click={close}>Blog</a>
-		<a href="/publicsq" class="nav-link" on:click={close}><img id="public-sq-nav" src="img/pbsq-white.png" alt="Public Square Affiliate Link"></a>
+		<a href="/publicsq" class="nav-link" on:click={close}><img id="public-sq-nav" src={PbSqLogoWhite} alt="Public Square Affiliate Link"></a>
 		<a href="/#contact" class="nav-link" on:click={close}>
 			<Icon data={envelope} scale={2.25} label="nav contact" class="navIcon" />
 		</a>
@@ -211,4 +212,6 @@
 
 	#public-sq-nav
 		height: 2ex
+		@media (min-width: $tablet-width)
+			transform: translateY(0.1ex)
 </style>
