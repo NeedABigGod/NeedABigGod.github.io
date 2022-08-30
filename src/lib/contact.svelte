@@ -23,7 +23,7 @@
 		><Icon data={rumble} scale={3} label="rumble" /></a
 	>
 </div>
-<a href="https://publicsq.com/welcome">
+<a href="https://app.publicsq.com/marketplace/fa37a7e0-e1e3-11ec-9835-c3f74dddc561">
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 392.33 85.9"

@@ -31,6 +31,7 @@
 		<a href="/#buying" class="nav-link" on:click={close}>Buying</a>
 		<a href="/#selling" class="nav-link" on:click={close}>Selling</a>
 		<a href="/blog" class="nav-link" on:click={close}>Blog</a>
+		<a href="/publicsq" class="nav-link" on:click={close}><img id="public-sq-nav" src="img/pbsq-white.png" alt="Public Square Affiliate Link"></a>
 		<a href="/#contact" class="nav-link" on:click={close}>
 			<Icon data={envelope} scale={2.25} label="nav contact" class="navIcon" />
 		</a>
@@ -50,11 +51,21 @@
 
 <style lang="sass">
 	:global
+		html
+			scroll-behavior: smooth
+			font-size: 16pt
+			font-family: 'Poppins', sans-serif
+			background-color: $site-bg
 		#svelte
 			display: flex
 			flex-direction: column
 			align-items: center
 			padding-bottom: 40vh
+		body > div
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			min-height: 100vh
 		div
 			box-sizing: border-box
 		h1, h2, h3, span
@@ -63,6 +74,14 @@
 			font-weight: 400
 		a
 			text-decoration: none
+		.navIcon
+			@media (min-width: $tablet-width)
+				width: 30px
+			&.home
+				fill: $tertiary !important
+				transition: fill 0.2s
+				&:hover, &:focus
+					fill: $text-light !important
 		.bttn-link
 			transition: background-color 0.2s
 			padding: 0.8ex 0.8ch
@@ -76,7 +95,7 @@
 			right: 10px
 			bottom: 10px
 		.section img
-			max-width: 100%
+			max-width: min(100%, 94vw)
 			
 	nav
 		position: fixed
@@ -190,23 +209,6 @@
 		align-items: flex-end
 		padding: 50px 0
 
-	:global
-		html
-			scroll-behavior: smooth
-			font-size: 16pt
-			font-family: 'Poppins', sans-serif
-			background-color: $site-bg
-		body > div
-			display: flex
-			flex-direction: column
-			justify-content: space-between
-			min-height: 100vh
-		.navIcon
-			@media (min-width: $tablet-width)
-				width: 30px
-			&.home
-				fill: $tertiary !important
-				transition: fill 0.2s
-				&:hover, &:focus
-					fill: $text-light !important
+	#public-sq-nav
+		height: 2ex
 </style>
