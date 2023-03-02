@@ -1,11 +1,15 @@
+import type { PageLoad } from './$types'
+
 const showOnly = 3
 
-export async function load() {
+export const load = (async ({params}) => {
 	const imports = import.meta.glob('./posts/**/*.md', { eager: true })
 
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	const posts: any[] = []
 	for (const path in imports) {
-		const post = imports[path]
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		const post: any = imports[path]
 		if (post) {
 			posts.push({
 				...post.metadata,
@@ -24,4 +28,4 @@ export async function load() {
 	return {
 		posts: filteredPosts
 	}
-}
+}) satisfies PageLoad

@@ -13,7 +13,7 @@
     align-items: center
   p
     margin: 0
-    color: $text-light-fade
+    color: dsn.$contact-fg
     font-family: Helvetica, sans-serif
     font-size: .8rem
     font-weight: 300

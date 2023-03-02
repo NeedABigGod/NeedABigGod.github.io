@@ -1,16 +1,14 @@
 <p>
-	I can provide <strong>timely</strong>, <strong>relevant</strong> resources throughout your real estate
-	transaction and give you a better buying or selling experience through
-	<strong>knowledge</strong>, <strong>diligence</strong>, and <strong>integrity</strong>.
+	[High level view of your offered services. Around 180 characters <strong>max</strong>. For reference, this message here is 107.]
 </p>
 
 <style lang="sass">
   p
     box-sizing: border-box
     margin: 0
-    padding: calc($portrait-bleed + 1ex) $summary-text-margin
+    padding: calc(dsn.$portrait-bleed + 1ex) dsn.$summary-txt-marg
     font-size: 0.9em
     font-weight: 200
-    @media (min-width: $tablet-width)
+    @media (min-width: dsn.$bp-tablet)
       font-size: 1.1em
 </style>

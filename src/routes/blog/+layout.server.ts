@@ -1,9 +1,12 @@
-export async function load() {
+import type { LayoutServerLoad } from './$types'
+
+export const load = (async () => {
 	const imports = import.meta.glob('./posts/**/*.md', { eager: true })
 
 	const posts = []
 	for (const path in imports) {
-		const post = imports[path]
+		// eslint-disable-next-line @typescript-eslint/no-explicit-any
+		const post: any = imports[path]
 		if (post) {
 			posts.push({
 				navPath: path.slice(2, -9),
@@ -21,4 +24,4 @@ export async function load() {
 	return {
 		posts: filteredPosts
 	}
-}
+}) satisfies LayoutServerLoad

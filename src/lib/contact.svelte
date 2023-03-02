@@ -1,92 +1,35 @@
 <script lang="ts">
-	import { envelope, instagram, linkedin } from 'svelte-awesome/icons'
-	import rumble from './icons/rumble-logo'
-	import Icon from 'svelte-awesome'
+	import IconInstagram from '$lib/icons/Instagram.svelte'
+	import IconLinkedIn from '$lib/icons/LinkedIn.svelte'
+	import IconMail from '$lib/icons/Mail.svelte'
+	import IconRumble from '$lib/icons/RumbleLogo.svelte'
+	import LogoPublicSq from '$lib/icons/PublicSq.svelte'
 </script>
 
-<h1>Contact</h1>
+<h2>Contact</h2>
 
 <div class="email-row">
-	<Icon data={envelope} scale={2.25} label="email icon" />
-	<a href="mailto:AZRealEstateBetty@outlook.com">
-		AZRealEstateBetty@outlook.com
-	</a>
+	<div class="icon-mail-container"><IconMail /></div>
+	<a href="mailto:AZRealEstateBetty@outlook.com"> AZRealEstateBetty@outlook.com </a>
 </div>
 <div class="link-row">
-	<a href="https://www.instagram.com/azrealestatebetty/"
-		><Icon data={instagram} scale={3} label="instagram" /></a
-	>
-	<a href="https://www.linkedin.com/in/beth-mcgwire-25ba11227/"
-		><Icon data={linkedin} scale={3} label="linkedIn" /></a
-	>
-	<a href="https://rumble.com/c/c-1405544"
-		><Icon data={rumble} scale={3} label="rumble" /></a
-	>
+	<a href="https://www.instagram.com/azrealestatebetty/">
+		<IconInstagram />
+	</a>
+	<a href="https://www.linkedin.com/in/beth-mcgwire-25ba11227/">
+		<IconLinkedIn />
+	</a>
+	<a href="https://rumble.com/c/c-1405544">
+		<IconRumble />
+	</a>
 </div>
 <a href="https://app.publicsq.com/marketplace/fa37a7e0-e1e3-11ec-9835-c3f74dddc561">
-<svg
-	xmlns="http://www.w3.org/2000/svg"
-	viewBox="0 0 392.33 85.9"
-	class="public-sq-logo"
->
-	<defs>
-		<linearGradient
-			id="linear-gradient-logo-dark"
-			x1="2.5"
-			y1="79.44"
-			x2="75.21"
-			y2="13.85"
-			gradientUnits="userSpaceOnUse"
-		>
-			<stop offset="0" stop-color="#bc4b9b" /><stop
-				offset="1"
-				stop-color="#5aacdf"
-			/>
-		</linearGradient>
-	</defs>
-	<g id="Layer_2" data-name="Layer 2">
-		<g id="Layer_1-2" data-name="Layer 1">
-			<path
-				d="M0,0V85.9H85.9V0ZM68.14,68.14H17.76V17.76H68.14Z"
-				style="fill: url(#linear-gradient-logo-dark)"
-			/>
-			<g>
-				<path
-					d="M118.66,17.87h20.88c10.44,0,17.14,6.2,17.14,15.77S150,49.41,139.54,49.41H130V68.28H118.66Zm19.73,21.82c4.32,0,6.91-2.3,6.91-6s-2.59-6.05-6.91-6.05H130v12.1Z"
-					style="fill: #4d4b4b"
-				/>
-				<path
-					d="M192,68.28H181.45V63.45a13.34,13.34,0,0,1-11.09,5.4c-8,0-13.39-5.18-13.39-13.17V32h10.58V52.87c0,4,2.45,6.62,6.19,6.62,5,0,7.71-4.1,7.71-11.59V32H192Z"
-					style="fill: #4d4b4b"
-				/>
-				<path
-					d="M205.06,64.68v3.6H194.48v-51h10.58V35.44c2-2.44,5.48-4,9.8-4,10.51,0,17,7.35,17,18.72s-6.48,18.72-17.14,18.72C210.61,68.85,206.93,67.27,205.06,64.68Zm16.42-14.55c0-5.83-3.38-9.72-8.5-9.72s-8.57,3.89-8.57,9.72,3.39,9.72,8.57,9.72S221.48,56,221.48,50.13Z"
-					style="fill: #4d4b4b"
-				/>
-				<path d="M233.86,17.3h10.59v51H233.86Z" style="fill: #4d4b4b" /><path
-					d="M259.28,17.3V27.45H248.12V17.3ZM248.33,32h10.59V68.28H248.33Z"
-					style="fill: #4d4b4b"
-				/>
-				<path
-					d="M261,50.13c0-11,7.63-18.72,18.58-18.72,9.72,0,16.49,4.9,17.64,12.89l-10.22,2a6.72,6.72,0,0,0-7-5.91c-5,0-8.13,3.82-8.13,9.72s3.24,9.72,8.13,9.72a6.55,6.55,0,0,0,6.84-5.47l10.3,2.09c-1.3,7.63-8,12.38-17.57,12.38C268.63,68.85,261,61.15,261,50.13Z"
-					style="fill: #4d4b4b"
-				/>
-				<path
-					d="M298.44,52.8l9.94-3a10.2,10.2,0,0,0,10,9.37c4.53,0,7.49-2.16,7.49-5.33,0-9.51-25.85-3.89-25.85-22.4C300,23.2,308,17.3,317.81,17.3s17.57,5.18,19.3,12.89L327,34.44A9,9,0,0,0,317.81,27c-4,0-6.41,1.65-6.41,4.46,0,8,25.93,1.59,25.93,22.18,0,9.14-7.78,15.26-19.37,15.26C307.88,68.85,299.38,62,298.44,52.8Z"
-					style="fill: #4d4b4b"
-				/>
-				<path
-					d="M365.55,81.38V65.47c-1.95,2.16-5.33,3.38-9.29,3.38-10.37,0-17.43-7.34-17.43-18.72s6.48-18.72,16.56-18.72c4.61,0,8.14,1.66,10.16,4.18V32h10.58V81.38Zm.65-31.25c0-5.83-3.39-9.72-8.57-9.72s-8.5,3.89-8.5,9.72,3.38,9.72,8.5,9.72S366.2,56,366.2,50.13Z"
-					style="fill: #4d4b4b"
-				/>
-				<path d="M392.33,57.77V68.28H381.46V57.77Z" style="fill: #4d4b4b" />
-			</g>
-		</g>
-	</g>
-</svg>
+	<LogoPublicSq />
 </a>
 
 <style lang="sass">
+	h2
+		font-size: 2em
 	.email-row
 		display: flex
 		flex-direction: row
@@ -96,7 +39,7 @@
 			margin-left: 6px
 			padding: 3px 9px
 			font-size: .8em
-			@media (min-width: $tablet-width)
+			@media (min-width: dsn.$bp-tablet)
 				font-size: 1em
 	.link-row
 		display: flex
@@ -107,19 +50,18 @@
 			display: flex
 			justify-content: center
 			align-content: center
-			padding-top: 3px
-			width: 60px
-			height: 60px
+			width: 58px
+			height: 58px
 	a
-		box-sizing: border-box
-		color: $accent-shade
+		color: dsn.$contact-link-fg
 		transition: color 0.2s, border 0.2s
 		border: 3px solid transparent
 		border-radius: 9px
+		padding: 2px
 		&:hover, &:focus
-			color: $accent
-			border: 3px solid $accent
-	.public-sq-logo
-		margin: 12px 12px
-		width: 230px
+			color: dsn.$contact-link-fg-hov
+			border: 3px solid dsn.$contact-link-fg-hov
+	.icon-mail-container
+		height: 46px
+		width: 46px
 </style>

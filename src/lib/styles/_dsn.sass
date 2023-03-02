@@ -1,0 +1,128 @@
+// nblk/nwht = near black/white
+// ter = tertiary
+// dsat = desaturated
+// brdr = border
+// clr = color
+// hov = hover/focus
+// marg = margin
+// hdg = heading
+
+$bp-phablet: 580px
+$bp-tablet: 760px
+$bp-partial: 1200px
+$bp-fullsize: 1400px
+$bp-oversize: 2600px
+
+$clr-gold: hsl(42, 70%, 50%)
+$clr-gold-lght: hsl(42, 70%, 60%)
+$clr-gold-dark: hsl(42, 70%, 40%)
+$clr-viol: hsl(326, 22%, 49%)
+$clr-viol-lght: hsl(326, 22%, 60%)
+$clr-viol-dark: hsl(327, 22%, 40%)
+$clr-viol-nblk: hsl(330, 20%, 8%)
+$clr-viol-trlu: hsla(326, 22%, 49%, 0.9)
+$clr-rosq: hsl(290, 8%, 58%)
+$clr-rosq-lght: hsl(286, 8%, 68%)
+$clr-rosq-dark: hsl(291, 8%, 48%)
+$clr-verd: hsl(173, 43%, 51%)
+$clr-verd-lght: hsl(172, 43%, 60%)
+$clr-verd-vlgh: hsl(172, 43%, 72%)
+$clr-verd-nwht: hsl(173, 35%, 97%)
+$clr-verd-nwht-trlu: hsla(173, 35%, 97%, 0.75)
+$clr-verd-dark: hsl(173, 43%, 40%)
+$clr-verd-dsat: hsl(180, 22%, 52%)
+$clr-verd-dsat-lght: hsl(180, 22%, 60%)
+$clr-verd-dsat-dark: hsl(180, 22%, 40%)
+
+$clr-pri: $clr-viol
+$clr-pri-lght: $clr-viol-lght
+$clr-pri-dark: $clr-viol-dark
+$clr-pri-nblk: $clr-viol-nblk
+$clr-pri-trlu: $clr-viol-trlu
+$clr-pri-dsat: $clr-rosq
+$clr-pri-dsat-lght: $clr-rosq-lght
+$clr-pri-dsat-dark: $clr-rosq-dark
+$clr-sec: $clr-verd
+$clr-sec-lght: $clr-verd-lght
+$clr-sec-vlgh: $clr-verd-vlgh
+$clr-sec-nwht: $clr-verd-nwht
+$clr-sec-nwht-trlu: $clr-verd-nwht-trlu
+$clr-sec-dark: $clr-verd-dark
+$clr-sec-dsat: $clr-verd-dsat
+$clr-sec-dsat-lght: $clr-verd-dsat-lght
+$clr-sec-dsat-dark: $clr-verd-dsat-dark
+$clr-ter: $clr-gold
+$clr-ter-lght: $clr-gold-lght
+$clr-ter-dark: $clr-gold-dark
+
+$def-fg: $clr-pri-nblk
+$def-bg: $clr-sec-nwht
+
+$link-btn-fg: $clr-ter-lght
+$link-btn-fg-hov: $clr-sec-nwht
+$link-btn-bg: $clr-pri
+$link-btn-bg-hov: $clr-pri-dark
+$link-btn-bd-rad: 8px
+$link-list-fg: $clr-sec-nwht
+$link-list-bg: $clr-pri
+$link-list-bg-hov: $clr-pri-dark
+$link-list-brdr-clr: $clr-ter
+$link-list-brdr-clr-hov: $clr-ter-lght
+
+$nav-fg: $clr-sec-nwht
+$nav-bg: $clr-pri-trlu
+$nav-bar-bg: $clr-pri-dark
+$nav-brdr: none
+$nav-brdr-rad: 9999px
+$nav-btn-open-fg: $clr-sec-nwht
+$nav-btn-open-fg-hov: $clr-pri-nblk
+$nav-link-fg: $clr-sec-nwht
+$nav-link-fg-hov: $clr-ter-lght
+$nav-link-bg-hov: $clr-pri-nblk
+$nav-bar-link-bg-hov: $clr-pri-nblk
+$nav-open-fg: $clr-sec-nwht
+$nav-open-bg: $clr-pri-trlu
+
+$landing-upper-bg: $clr-pri-dark
+$landing-lower-bg: $clr-sec-vlgh
+$landing-upper-fg: $landing-lower-bg
+$landing-lower-fg: $landing-upper-bg
+$landing-link-fg: $landing-lower-bg
+$landing-link-bg: $link-btn-bg
+$landing-link-bg-hov: $link-btn-bg-hov
+$landing-link-brdr: $landing-lower-bg
+$portrait-brdr-width: 4px
+$portrait-brdr: $portrait-brdr-width solid $landing-lower-bg
+$portrait-marg-left: 10px
+$portrait-bleed: 40px
+$summary-txt-marg: calc($portrait-brdr-width + $portrait-marg-left)
+
+$main-hdg-fg: $clr-pri
+$main-hdg2-fg: $clr-pri-dark
+$main-hdg-brdr-clr: $clr-pri-lght
+$main-divider-clr: $clr-pri-lght
+$main-service-hdg-fg: $clr-pri
+$main-img-ovly: $clr-sec-nwht-trlu
+
+$blog-nav-fg: $clr-sec-nwht
+$blog-nav-bg: $clr-pri-lght
+$blog-nav-link-brdr: $clr-ter
+$blog-nav-link-brdr-hov: $clr-ter-lght
+
+$foot-bg: $clr-pri-dsat-dark
+
+$contact-fg: $clr-sec-nwht
+$contact-link-fg: $clr-ter
+$contact-link-fg-hov: $clr-ter-lght
+
+$def-contact-marg: 80px 0 160px 0
+
+$body-family: "Poppins", serif
+$body-weight: 400
+$heading-family: "Poppins", serif
+$heading-weight: 200
+$fs-phone: 16pt
+$fs-tablet: 16pt
+$fs-partial: 16pt
+$fs-fullsize: 16pt
+$fs-oversize: 18pt

@@ -1,0 +1,148 @@
+@use 'dsn'
+
+html
+	font: dsn.$fs-phone dsn.$body-family
+	line-height: 1.15
+
+	color: dsn.$def-fg
+	background-color: dsn.$def-bg
+
+	overflow-x: hidden
+	scroll-behavior: smooth
+
+	@media (min-width: dsn.$bp-phablet)
+		font-size: dsn.$fs-phone
+
+	@media (min-width: dsn.$bp-tablet)
+		font-size: dsn.$fs-tablet
+
+	@media (min-width: dsn.$bp-partial)
+		font-size: dsn.$fs-partial
+
+	@media (min-width: dsn.$bp-fullsize)
+		font-size: dsn.$fs-fullsize
+
+	@media (min-width: dsn.$bp-oversize)
+		font-size: dsn.$fs-oversize
+
+body
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	max-width: 100vw
+	overflow: hidden
+div
+	box-sizing: border-box
+h1, h2, h3, span
+	font-weight: dsn.$heading-weight
+p, a
+	font-weight: dsn.$body-weight
+a
+	text-decoration: none
+#open-nav > svg
+	@media (min-width: dsn.$bp-tablet)
+		width: 30px
+	&.home
+		color: dsn.$nav-btn-open-fg
+		transition: fill 0.2s
+		&:hover, &:focus
+			color: dsn.$nav-btn-open-fg-hov
+.bttn-link
+	transition: background-color 0.2s, color 0.2s
+	padding: 0.8ex 0.8ch
+	color: dsn.$link-btn-fg
+	background-color: dsn.$link-btn-bg
+	border-radius: dsn.$link-btn-bd-rad
+	&:hover, &:focus
+		color: dsn.$link-btn-fg-hov
+		background-color: dsn.$link-btn-bg-hov
+.link-continue
+	position: absolute
+	right: 10px
+	bottom: 10px
+.link-band-h
+	box-sizing: border-box
+	display: flex
+	width: 100%
+	padding: 1ex 1ch
+	color: dsn.$link-list-fg
+	background-color: dsn.$link-list-bg
+	border-left: 9px solid dsn.$link-list-brdr-clr
+	transition: background-color 0.2s, color 0.2s, border 0.2s
+	&:hover, &:focus
+		background-color: dsn.$link-list-bg-hov
+		border-left: 18px solid dsn.$link-list-brdr-clr-hov
+
+.section
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	width: 100vw
+.anchor
+	@media (min-width: dsn.$bp-tablet)
+		scroll-margin: 60px
+.inner
+	display: flex
+	flex-direction: column
+.spacer
+	display: flex
+	flex: 0 1 100%
+
+.lower-banner
+	p
+		box-sizing: border-box
+		max-height: 100%
+		max-width: 100%
+		margin: 0
+		padding: calc(dsn.$portrait-bleed + 1ex) dsn.$summary-txt-marg
+		font-size: 0.9em
+		font-weight: 200
+		@media (min-width: dsn.$bp-tablet)
+			font-size: 1.1em
+	a
+		position: absolute
+		display: flex
+		justify-content: center
+		align-items: center
+		bottom: -1.6ex
+		right: 20px
+		width: 120px
+		height: 40px
+		border-radius: 9999px
+		color: dsn.$link-btn-fg
+		background-color: dsn.$link-btn-bg
+		transition: all 0.2s
+		z-index: 100
+		@media (min-width: dsn.$bp-tablet)
+			right: 100px 
+		&:hover, &:focus
+			bottom: -2.0ex
+			right: 15px
+			width: 130px
+			height: 50px
+			color: dsn.$link-btn-fg-hov
+			background-color: dsn.$link-btn-bg-hov
+			@media (min-width: dsn.$bp-tablet)
+				right: 95px
+
+.title-div
+	h1
+		display: flex
+		flex: 0 1 10ch
+		color: dsn.$landing-upper-fg
+		font-size: 3.0em
+		margin: 0
+		@media (min-width: dsn.$bp-phablet)
+			font-size: 4em
+
+.markdown img
+	max-width: min(100%, 94vw)
+
+.img-overlay
+	background-color: dsn.$main-img-ovly
+	backdrop-filter: blur(3px)
+
+.icon-inline
+	display: inline-block
+	width: .9em

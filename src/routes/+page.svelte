@@ -1,203 +1,103 @@
 <script lang="ts">
 	import Contact from '$lib/contact.svelte'
-	import Tagline from '$lib/tagline.svelte'
-	import Buying from '$lib/buying.svelte'
-	import Selling from '$lib/selling.svelte'
-	import Pitch from '$lib/pitch.svelte'
 </script>
 
-<div class="section landing outer">
-	<div class="landing inner">
-		<div class="landing upper-banner">
-			<div class="title-div">
-				<img
-					src="img/bio-pic.jpg"
-					alt="Portrait - Elizabeth Joy McGwire"
-					class="bio-pic"
-				/>
-				<div class="id-box">
-					<span class="name-display">Beth McGwire</span>
-					<span class="affiliation">Legends Realty</span>
-				</div>
-				<div class="spacer" />
-			</div>
-		</div>
-		<div class="landing lower-banner">
-			<div class="center-box">
-				<Tagline />
-				<a href="/about" class="bio-link">Full Bio ❯</a>
-			</div>
+<div id="real-estate" class="section outer service">
+	<div class="inner">
+		<div class="service-column img-overlay">
+			<h2>Real Estate</h2>
+			<p>
+				Whether your goal is to buy or sell a home, or invest in property, I am looking forward to
+				helping you achieve your goal. I am intentional in how I conduct my business so you are my
+				focus.
+			</p>
+			<a href="/real-estate" class="link-band-h">More Info ❯</a>
 		</div>
 	</div>
 </div>
 
-<div id="pitch" class="section pitch outer">
-	<div class="pitch inner">
-		<Pitch />
+<div id="education" class="section outer service">
+	<div class="inner">
+		<div class="service-column img-overlay">
+			<h2>Home Education</h2>
+			<p>
+				The best part of being beyond the schooling years is that I get to use my experiences to help other
+				families find better education solutions.
+			</p>
+			<a href="/consulting#home-ed" class="link-band-h">More Info ❯</a>
+		</div>
 	</div>
 </div>
 
-<div id="buying" class="section buying outer anchor">
-	<div class="buying inner">
-		<Buying />
+<div id="business" class="section outer service">
+	<div class="inner">
+		<div class="service-column img-overlay">
+			<h2>Business Consulting</h2>
+			<p>
+				Having a great business idea is not as easy as creating your business. I will use my
+				knowledge and expertise to help you get your business started or give it a re-charge.
+			</p>
+			<a href="/consulting#business" class="link-band-h">More Info ❯</a>
+		</div>
 	</div>
 </div>
 
-<div id="selling" class="section selling outer anchor">
-	<div class="selling inner">
-		<Selling />
-	</div>
-</div>
-
-<div id="contact" class="section contact outer anchor">
-	<div class="contact inner">
+<div id="contact" class="section outer">
+	<div class="inner">
 		<Contact />
 	</div>
 </div>
 
 <style lang="sass">
-	.section
-		display: flex
-		flex-direction: row
-		justify-content: center
-		align-items: center
-		width: 100vw
-		margin-bottom: 120px
-	.inner
-		display: flex
-		flex-direction: column
-	.anchor
-		@media (min-width: $tablet-width)
-			padding-top: 40px
-			margin-top: -40px
+#real-estate
+	background-image: url("/img/bg/building.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+#education
+	margin-top: 60px
+	background-image: url("/img/bg/big-wheel.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: bottom
+#business
+	margin-top: 60px
+	background-image: url("/img/bg/az02.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
 
-	.landing.outer
-		position: relative
-		display: flex
-		flex: 1 0 70vh
-		justify-content: center
-		align-items: flex-start
-		background-color: $landing-background
-		@media (min-height: $fullsize-height)
-			flex: 0 0 756px
-	.landing.inner
-		display: flex
-		flex-direction: column
-		align-items: center
-		height: 100%
-	.landing.upper-banner
-		flex: 0 0 50vh
-		display: flex
+.service
+	&.outer
 		flex-direction: row
-		justify-content: center
-		align-items: flex-end
-		width: 100vw
-		background-color: $landing-upper
-		@media (min-height: $fullsize-height)
-			flex: 0 0 540px
-	.title-div
-		display: flex
+	& > .inner
 		flex: 0 1 1000px
 		flex-direction: row
-		justify-content: center
-		align-items: flex-end
-	.bio-pic
-		flex: 1 0 45vw
+	&:nth-of-type(2n + 1)
+		& > .inner
+			flex-direction: row-reverse
+
+#contact
+	margin: dsn.$def-contact-marg
+	.inner
+		align-items: center
+
+.service-column
+	flex: 0 1 32ch
+	display: flex
+	flex-direction: column
+	padding-bottom: 6ex
+	overflow-x: hidden
+	h2
 		box-sizing: border-box
-		transform: translateY($portrait-bleed)
-		margin: 0 calc($portrait-left-margin/2) 0 $portrait-left-margin
-		overflow: hidden
-		border: $portrait-border
-		@media (min-width: $phablet-width)
-			flex: 0 0 240px
-	.id-box
-		transform: translateY(2ex)
-		@media (min-width: $phablet-width)
-			transform: translateY(3ex)
-		.name-display
-			display: block
-			flex: 0 1 8ch
-			font-size: 2em
-			color: $landing-upper-text
-			margin: 0
-			@media (min-width: $phablet-width)
-				font-size: 3.5em
-		.affiliation
-			display: block
-			margin: 0
-			color: $primary
-			font-size: 1em
-			font-weight: 400
-			@media (min-width: $phablet-width)
-				font-size: 1.5em
-	.landing.lower-banner
-		flex: 1 1 100%
-		display: flex
-		flex-direction: row
-		justify-content: center
-		align-items: center
-		width: 100%
-		color: $landing-lower-text
-		.center-box
-			position: relative
-			flex: 0 1 864px
-			display: flex
-			flex-direction: column
-			justify-content: center
-			height: 100%
-	.bio-link
-		position: absolute
-		display: flex
-		justify-content: center
-		align-items: center
-		bottom: -10px
-		right: 20px
-		width: 120px
-		height: 40px
-		border-radius: 9999px
-		color: $tertiary-light
-		background-color: $primary
-		transition: all 0.2s
-		@media (min-width: $tablet-width)
-			right: 100px
-		&:hover, &:focus
-			bottom: -15px
-			right: 15px
-			width: 130px
-			height: 50px
-			color: $text-light
-			background-color: $primary-light
-			@media (min-width: $tablet-width)
-				right: 95px
-
-	.pitch.inner, .buying.inner, .selling.inner
-		flex: 0 1 400px
-		@media (min-width: $tablet-width)
-			flex: unset
-
-	.pitch.inner
-		flex: 0 1 400px
-		align-items: center
-		@media (min-width: $tablet-width)
-			flex: 0 1 950px
-
-	.contact.section
-		margin-top: 30px
-		margin-bottom: 200px
-	.contact.outer
-		display: flex
-		flex-direction: column
-		align-items: center
-	.contact.inner
-		display: flex
-		flex-direction: column
-		align-items: center
-		@media (min-width: $tablet-width)
-			max-width: 800px
-
-	.spacer
-		display: flex
-		flex: 0 1 100%
-
-	//@media screen and (max-width: wide-tablet-width)
+		max-width: 80%
+		margin: 2ex 0 0 16px
+		font-size: 3em
+		color: dsn.$main-service-hdg-fg
+	p
+		box-sizing: border-box
+		max-width: 80%
+		margin: 1ex 0 4ex 16px
+	a
+		margin-bottom: 2ex
 </style>

@@ -1,6 +1,7 @@
 <script lang="ts">
-	import type { PageData } from '.svelte-kit/types/src/routes/blog/$types'
-	export let data: PageData
+  import type { PageData } from './$types';
+
+  export let data: PageData;
 </script>
 
 <h1>Latest Posts</h1>

@@ -12,4 +12,4 @@ writing, business consulting and administration, homeschool consulting, team lea
 
 My experiences include: homeschool co-op management, education facilitation, facility management, project management, communications management, procurement management, safety management, business administration
 
-Whatever your hand finds to do, do it with your might; for there is no work or device or knowledge or wisdom in the grave where you are going.  Ecclesiastes 9:10
+Whatever your hand finds to do, do it with your might; for there is no work or device or knowledge or wisdom in the grave where you are going. Ecclesiastes 9:10

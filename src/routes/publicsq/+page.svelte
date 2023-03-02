@@ -1,17 +1,5 @@
-<div class="section landing outer">
-	<div class="landing inner">
-		<div class="landing upper-banner">
-			<div class="title-div">
-				<div class="page-title-box">
-					<span class="tagline-span">Join Me on PublicSq!</span>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div id="pitch" class="section pitch outer">
-	<div class="pitch inner">
+<div id="pitch" class="section outer">
+	<div class="inner">
 		<p>
 			Connect with businesses that support your love of America and the freedom we have here. Find
 			local and online businesses you want to support, all across America. Use the app (from your
@@ -44,54 +32,19 @@
 		display: flex
 		flex-direction: column
 
-	.landing.outer
-		position: relative
-		display: flex
-		flex: 1 0 250px
-		justify-content: center
-		align-items: flex-start
-		background-color: $landing-background
-	.landing.inner
-		display: flex
-		flex-direction: column
-		align-items: center
-		height: 100%
-	.landing.upper-banner
-		flex: 0 1 100%
-		display: flex
-		flex-direction: row
-		justify-content: center
-		align-items: flex-end
-		width: 100vw
-		background-color: $landing-upper
-	.title-div
-		display: flex
-		flex: 0 1 1000px
-		flex-direction: row
-		justify-content: center
-		align-items: flex-end
-	.page-title-box
-		flex: 0 1 100%
-		.tagline-span
-			display: block
-			font-size: 2em
-			color: $landing-upper-text
-			margin: 0
-			padding: 6px
-			@media (min-width: $phablet-width)
-				font-size: 3.5em
-
-	.pitch.outer
+	#pitch
+		margin-top: 60px
 		margin-bottom: 120px
-	.pitch.inner
-		flex: 0 1 400px
-		align-items: center
-		@media (min-width: $tablet-width)
-			flex: 0 1 950px
-		img
-			margin: 2ex 2ch
-		p
-			padding: 0 1ch
+		.inner
+			flex: 0 1 400px
+			align-items: center
+			@media (min-width: dsn.$bp-tablet)
+				flex: 0 1 850px
+			img
+				margin: 2ex 2ch
+				max-width: min(100%, 94vw)
+			p
+				padding: 0 1ch
 
 	.register-link
 		margin: 0 2ch
@@ -103,8 +56,6 @@
 		border-radius: 9px
 		transition: all 0.2s
 		&:hover, &:focus
-			// color: #fde311
 			border-radius: 18px
 			filter: hue-rotate(40deg)
-	//@media screen and (max-width: wide-tablet-width)
 </style>

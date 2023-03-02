@@ -1,8 +1,7 @@
 <h1>For Sellers</h1>
 <p class="summary">
-	Before you sell, here are some links to get the information you may find
-	useful in getting your property ready. Contact me and I will help you with all
-	the details of the selling process.
+	Before you sell, here are some links to get the information you may find useful in getting your
+	property ready. Contact me and I will help you with all the details of the selling process.
 </p>
 <div class="contents">
 	<a href="https://roc.az.gov/"> Find a Contractor </a>
@@ -14,7 +13,7 @@
 	h1
 		margin: 0
 		padding: 0 12px
-		color: $primary-light
+		color: dsn.$main-hdg-fg
 	.summary
 		max-width: 836px
 		padding: 0 14px
@@ -28,7 +27,7 @@
 		row-gap: 6px
 		max-width: 400px
 		margin: 0 12px
-		@media (min-width: $tablet-width)
+		@media (min-width: dsn.$bp-tablet)
 			grid: 1fr / auto-flow
 			max-width: unset
 		a
@@ -37,15 +36,15 @@
 			padding: 1ex 1ch
 			font-size: 0.85em
 			font-weight: 400
-			color: $accent-light
-			background-color: $primary
-			border-left: 9px solid $tertiary
-			transition: background-color 0.2s, border 0.2s
-			@media (min-width: $tablet-width)
+			color: dsn.$link-list-fg
+			background-color: dsn.$link-list-bg
+			border-left: 9px solid dsn.$link-list-brdr-clr
+			transition: background-color 0.2s, color 0.2s, border 0.2s
+			@media (min-width: dsn.$bp-tablet)
 				width: calc((836px / 3) - 12px)
 			&:last-of-type
 				margin-bottom: 0
 			&:hover, &:focus
-				background-color: $primary-shade
-				border-left: 18px solid $tertiary-light
+				background-color: dsn.$link-list-bg-hov
+				border-left: 18px solid dsn.$link-list-brdr-clr-hov
 </style>
