@@ -585,6 +585,7 @@ a {
   color: hsl(172, 43%, 72%);
   font-size: 3em;
   margin: 0;
+  padding: 0 9px;
 }
 @media (min-width: 580px) {
   .title-div h1 {
@@ -598,6 +599,7 @@ a {
 
 .img-overlay {
   background-color: hsla(173, 35%, 97%, 0.75);
+  -moz-filter: blur(3px);
   backdrop-filter: blur(3px);
 }
 
