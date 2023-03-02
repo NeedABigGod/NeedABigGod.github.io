@@ -1,0 +1,1 @@
+import{_ as e}from"./preload-helper.41c905a7.js";const t=async()=>({title:"Real Estate Services",tagline:(await e(()=>import("./Tagline.ad4c5455.js"),["./Tagline.ad4c5455.js","./index.f4227d91.js"],import.meta.url)).default}),r=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{r as _,t as l};
