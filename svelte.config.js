@@ -1,10 +1,11 @@
 import adapter from '@sveltejs/adapter-static'
 import sveltePreprocess from 'svelte-preprocess'
-import { mdsvex } from 'mdsvex'
+import {mdsvex} from 'mdsvex'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeAddClasses from 'rehype-add-classes'
-import { s } from 'hastscript'
+import remarkFootnotes from 'remark-footnotes'
+import {s} from 'hastscript'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -22,6 +23,9 @@ const config = {
 			layout: {
 				blog: './src/lib/layouts/blog.svelte'
 			},
+			remarkPlugins: [
+				remarkFootnotes
+			],
 			rehypePlugins: [
 				[
 					rehypeAddClasses,

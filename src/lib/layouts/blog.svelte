@@ -71,4 +71,9 @@
 	:global(.copyright) {
 		font-size: 0.8em;
 	}
+	:global(ol > li) {
+		font-size: 0.8em;
+		font-weight: 200;
+		margin-bottom: 1.5ex;
+	}
 </style>
