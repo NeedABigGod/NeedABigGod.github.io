@@ -22,11 +22,23 @@
 	span {
 		font-size: 0.8em;
 	}
+	div > :global(h2) {
+		font-size: 1.25em;
+		margin-top: 3ex;
+		margin-bottom: 0;
+	}
+	div > :global(h3) {
+		font-size: 1.05em;
+		margin-top: 2ex;
+		margin-bottom: 0;
+		color: hsl(326, 22%, 60%);
+		font-weight: 400;
+	}
 	div > :global(p) {
 		font-size: 0.9em;
 		font-weight: 400;
 		line-height: 1.5;
-		align-self: center;
+		align-self: flex-start;
 	}
 	div > :global(blockquote) {
 		margin: 0.5ex 0 0.5ex 2ch;
