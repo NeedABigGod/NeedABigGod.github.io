@@ -20,10 +20,8 @@ As a real estate agent, I have access to great resources to help my clients lear
 
 Consider stopping by these great local businesses:
 
-![Bonnie's Booth at Speedway Antiques](/img/blog/bonnies-address.png)
+![Bonnie's Booth at Speedway Antiques and Lick's Ice Cream and Coffee](/img/blog/blog-businesses.png)
 
 You will love the fun Mid-Century Modern finds at Bonnie's Booth, located in Speedway Antiques.
-
-![Lick's Ice Cream](/img/blog/licks-address.png)
 
 I love the variety of locally sourced ice cream served at Lick's.  Flavors change regularly but you will not be disappointed.
