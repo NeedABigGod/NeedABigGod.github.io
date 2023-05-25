@@ -5,25 +5,21 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./internal/immutable/assets/_layout.35426226.css" rel="stylesheet">
-		<link href="./internal/immutable/assets/_page.a81ace1e.css" rel="stylesheet">
+		<link href="./internal/immutable/assets/0.35426226.css" rel="stylesheet">
+		<link href="./internal/immutable/assets/3.a81ace1e.css" rel="stylesheet">
 		<link href="./internal/immutable/assets/contact.05876c54.css" rel="stylesheet">
 		<link href="./internal/immutable/assets/Title.4af0bf24.css" rel="stylesheet">
-		<link rel="modulepreload" href="./internal/immutable/entry/start.ee3a2c76.js">
-		<link rel="modulepreload" href="./internal/immutable/chunks/index.f4227d91.js">
-		<link rel="modulepreload" href="./internal/immutable/chunks/singletons.ec51634d.js">
-		<link rel="modulepreload" href="./internal/immutable/entry/app.1af11ee1.js">
+		<link rel="modulepreload" href="./internal/immutable/entry/start.6d43366b.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/index.16ae46de.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/singletons.15ab19ea.js">
+		<link rel="modulepreload" href="./internal/immutable/entry/app.2950571f.js">
 		<link rel="modulepreload" href="./internal/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="./internal/immutable/entry/_layout.svelte.12209647.js">
-		<link rel="modulepreload" href="./internal/immutable/chunks/index.229d63c7.js">
-		<link rel="modulepreload" href="./internal/immutable/chunks/Mail.108ecfca.js">
-		<link rel="modulepreload" href="./internal/immutable/chunks/stores.0be0daf6.js">
-		<link rel="modulepreload" href="./internal/immutable/entry/_layout.ts.05e2a276.js">
-		<link rel="modulepreload" href="./internal/immutable/chunks/_layout.6c6f0f5b.js">
-		<link rel="modulepreload" href="./internal/immutable/entry/_page.svelte.13a2cf87.js">
-		<link rel="modulepreload" href="./internal/immutable/chunks/contact.a4d5e038.js">
-		<link rel="modulepreload" href="./internal/immutable/entry/_page.ts.d4a84266.js">
-		<link rel="modulepreload" href="./internal/immutable/chunks/_page.38f3f6ae.js">
+		<link rel="modulepreload" href="./internal/immutable/nodes/0.8f6ba2ce.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/index.b2720965.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/Mail.c153d8a5.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/stores.9f663b9e.js">
+		<link rel="modulepreload" href="./internal/immutable/nodes/3.cb8e9aed.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/contact.dc1def00.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -91,19 +87,20 @@
 			
 			<script>
 				{
-					__sveltekit_109vuc6 = {
-						env: {},
-						assets: new URL(".", location.href).pathname.replace(/^\/$/, ''),
-						element: document.currentScript.parentElement
+					__sveltekit_wdmbh5 = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
 					};
+
+					const element = document.currentScript.parentElement;
 
 					const data = [null,null];
 
 					Promise.all([
-						import("./internal/immutable/entry/start.ee3a2c76.js"),
-						import("./internal/immutable/entry/app.1af11ee1.js")
+						import("./internal/immutable/entry/start.6d43366b.js"),
+						import("./internal/immutable/entry/app.2950571f.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_109vuc6.element, {
+						kit.start(app, element, {
 							node_ids: [0, 3],
 							data,
 							form: null,
