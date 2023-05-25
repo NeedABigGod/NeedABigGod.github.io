@@ -14,8 +14,8 @@
 			<em> This is completely free... </em> free to list your business and free for everyone to use to
 			find businesses.
 		</p>
-		<a class="register-link" href="https://publicsq.typeform.com/PSQFree#source=BethPSQ108">
-			Register your business with PublicSq. today!
+		<a class="register-link" href="https://publicsq.mobi/BethMcGwire">
+			Connect with PublicSq.
 		</a>
 	</div>
 </div>
