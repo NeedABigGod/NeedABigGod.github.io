@@ -21,7 +21,8 @@ const config = {
 		mdsvex({
 			extensions: ['.md'],
 			layout: {
-				blog: './src/lib/layouts/blog.svelte'
+				blog: './src/lib/layouts/blog.svelte',
+				listing: './src/lib/layouts/listing.svelte'
 			},
 			remarkPlugins: [
 				remarkFootnotes

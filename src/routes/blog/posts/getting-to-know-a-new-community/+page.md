@@ -4,7 +4,7 @@ date: '2023-05-22'
 layout: blog
 ---
 
-![New community](/img/blog/new-community.png)
+![New community](/img/blog/new-community.jpg)
 
 If we learned one thing during the dark days of lock-down, it was how to research everything online.  This became a necessity in real estate.  People were even buying homes site-unseen because of all the restrictions on viewing homes in person.  Not all states had the same restrictions, but for those moving across state lines, it was very common for the entire real estate transaction to happen over the internet.  This was not easily adapted from the outset, but technology and practice have made the new era of online home shopping very appealing.
 
@@ -20,7 +20,7 @@ As a real estate agent, I have access to great resources to help my clients lear
 
 Consider stopping by these great local businesses:
 
-![Bonnie's Booth at Speedway Antiques and Lick's Ice Cream and Coffee](/img/blog/blog-businesses.png)
+![Bonnie's Booth at Speedway Antiques and Lick's Ice Cream and Coffee](/img/blog/blog-businesses.jpg)
 
 You will love the fun Mid-Century Modern finds at Bonnie's Booth, located in Speedway Antiques.
 

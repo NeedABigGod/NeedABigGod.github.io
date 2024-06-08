@@ -33,6 +33,7 @@
 		</a>
 		<div class="nav-spacer" />
 		<a href="/real-estate" class="nav-link" on:click={close}>Real Estate</a>
+		<a href="/listings" class="nav-link" on:click={close}>Listings</a>
 		<a href="/consulting" class="nav-link" on:click={close}>Consulting</a>
 		<a href="/blog" class="nav-link" on:click={close}>Blog</a>
 		<a href="/publicsq" class="nav-link" on:click={close}>
