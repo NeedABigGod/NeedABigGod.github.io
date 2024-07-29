@@ -7,10 +7,7 @@
 <div class="contents">
 	<div class="market-data">
 		<h2>Market Data</h2>
-		<img
-			src="https://mlssaz.stats.showingtime.com/infoserv/s-v1/LmgE-Ll3?w=400&h=300"
-			alt="Median Sales Prices"
-		/>
+		<iframe id="data-view" src="https://lookerstudio.google.com/embed/reporting/8982b6c1-ac94-42ff-8119-7995935e7162/page/p_fnf3gdsnvc" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 	</div>
 	<div class="buyer-links">
 		<a href="https://azre.gov/consumers/topics-research-purchasing-real-estate">
@@ -39,7 +36,7 @@
 		flex-direction: column
 		padding: 0 12px
 		@media (min-width: dsn.$bp-tablet)
-			flex-direction: row
+			flex-direction: column
 	.market-data
 		h2
 			margin-top: 0
@@ -52,8 +49,12 @@
 		flex-direction: column
 		margin-top: 12px
 		@media (min-width: dsn.$bp-tablet)
-			margin-top: 0
-			margin-left: 12px
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			margin-top: 12px
+			margin-left: 0
+			max-width: 840px
 		a
 			box-sizing: border-box
 			max-width: 400px
@@ -67,9 +68,12 @@
 			transition: background-color 0.2s, border 0.2s
 			@media (min-width: dsn.$bp-phablet)
 				width: 400px
-			&:last-of-type
-				margin-bottom: 0
 			&:hover, &:focus
 				background-color: dsn.$link-list-bg-hov
 				border-left: 18px solid dsn.$link-list-brdr-clr-hov
+	#data-view
+		width: 100%
+		height: 350px
+		@media (min-width: dsn.$bp-phablet)
+			height: 450px
 </style>

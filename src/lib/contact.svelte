@@ -4,6 +4,7 @@
 	import IconMail from '$lib/icons/Mail.svelte'
 	import IconRumble from '$lib/icons/RumbleLogo.svelte'
 	import LogoPublicSq from '$lib/icons/PublicSq.svelte'
+	import ImgWokeFree from '$lib/img/buywokefree.png'
 </script>
 
 <h2>Contact</h2>
@@ -26,6 +27,9 @@
 <a href="https://app.publicsq.com/marketplace/fa37a7e0-e1e3-11ec-9835-c3f74dddc561">
 	<LogoPublicSq />
 </a>
+<a href="https://buywokefree.com/">
+	<img id="img-woke-free" src={ImgWokeFree} alt="Buy Woke Free" />
+</a>
 
 <style lang="sass">
 	h2
@@ -45,7 +49,7 @@
 		display: flex
 		flex-direction: row
 		justify-content: space-between
-		width: 230px
+		width: 300px
 		a
 			display: flex
 			justify-content: center
@@ -64,4 +68,6 @@
 	.icon-mail-container
 		height: 46px
 		width: 46px
+	#img-woke-free
+		width: 300px
 </style>
